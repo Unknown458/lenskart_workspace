@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane fx:id="border" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.demoproject.demogol.firstmaincontrol">
+   <top>
+      <GridPane BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="949.0" minWidth="10.0" prefWidth="685.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="962.0" minWidth="10.0" prefWidth="685.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox prefHeight="800.0" prefWidth="664.0">
+               <children>
+                  <Pane fx:id="nav" prefHeight="78.0" prefWidth="631.0" stylesheets="@css/firstmain.css">
+                     <children>
+                        <Pane fx:id="navpro" layoutX="10.0" layoutY="26.0" prefHeight="44.0" prefWidth="631.0">
+                           <children>
+                              <ImageView fitHeight="44.0" fitWidth="92.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/New Project (10).png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Pane fx:id="imagecircle" layoutX="606.0" layoutY="9.0" prefHeight="25.0" prefWidth="26.0">
+                                 <children>
+                                    <ImageView fx:id="avtar" fitHeight="44.0" fitWidth="74.0" layoutX="-28.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/New Project (9).png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <Text fx:id="seprate" fill="#cfcfcfb7" fontSmoothingType="LCD" layoutX="-22.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="|" wrappingWidth="4.285714149475098">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="indexbox" layoutX="457.0" layoutY="11.0" prefHeight="25.0" prefWidth="125.0">
+                                 <children>
+                                    <TextFlow layoutX="32.0" layoutY="3.0" prefHeight="19.0" prefWidth="92.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Demmo Version" textAlignment="CENTER">
+                                             <fill>
+                                                <LinearGradient endX="1.0" endY="1.0" startX="0.061611374407582936">
+                                                   <stops>
+                                                      <Stop>
+                                                         <color>
+                                                            <Color red="0.3179824650287628" green="0.7631579041481018" blue="0.021198829635977745" />
+                                                         </color>
+                                                      </Stop>
+                                                      <Stop offset="1.0">
+                                                         <color>
+                                                            <Color red="0.19607843458652496" green="0.9607843160629272" blue="0.04313725605607033" />
+                                                         </color>
+                                                      </Stop>
+                                                   </stops>
+                                                </LinearGradient>
+                                             </fill>
+                                          </Text>
+                                       </children>
+                                    </TextFlow>
+                                    <FontAwesomeIconView glyphName="INFO" layoutX="22.0" layoutY="17.0">
+                                       <fill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="0.061611374407582936">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.3179824650287628" green="0.7631579041481018" blue="0.021198829635977745" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="0.19607843458652496" green="0.9607843160629272" blue="0.04313725605607033" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </fill>
+                                    </FontAwesomeIconView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                        <Line endX="488.5" layoutX="181.0" layoutY="4.0" startX="-181.0" stroke="#909090" strokeWidth="0.2" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="body" centerShape="false" prefHeight="723.0" prefWidth="615.0" scaleShape="false" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane fx:id="card" layoutX="46.0" layoutY="205.0" onMouseClicked="#owndash" prefHeight="144.0" prefWidth="272.0">
+                           <children>
+                              <ImageView fitHeight="192.0" fitWidth="249.0" layoutX="12.0" layoutY="-37.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@image/Group 1 (2).png" />
+                                 </image>
+                              </ImageView>
+                              <Pane fx:id="imagewrap" layoutX="105.0" layoutY="18.0" prefHeight="51.0" prefWidth="57.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="43.0" layoutX="12.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/admincolornew.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <TextFlow fx:id="textlabel" layoutX="141.0" layoutY="18.0" prefHeight="15.0" prefWidth="35.0" style="-fx-background-radius: 8px;" textAlignment="CENTER">
+                                 <children>
+                                    <Text fx:id="label" strokeType="OUTSIDE" strokeWidth="0.0" text="New" textAlignment="CENTER" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="75.0" layoutY="83.0">
+                                 <children>
+                                    <Text fx:id="cardinnerh" strokeType="OUTSIDE" strokeWidth="0.0" text="Owner Dashboard">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="60.0" layoutY="102.0">
+                                 <children>
+                                    <Text fx:id="cardinnerhsm" fill="#7c7777" strokeType="OUTSIDE" strokeWidth="0.0" text="Access tools for business">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                              <FontAwesomeIconView glyphName="ANGLE_RIGHT" layoutX="208.0" layoutY="115.0" selectionFill="#7c7777" textAlignment="CENTER" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <TextFlow layoutX="51.0" layoutY="86.0" prefHeight="44.0" prefWidth="563.0" textAlignment="CENTER">
+                           <children>
+                              <Text fx:id="title" strokeType="OUTSIDE" strokeWidth="0.0" text="How you planing to use Lenskart?" wrappingWidth="485.53369140625">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                                 <fill>
+                                    <LinearGradient endX="0.6824644549763033" endY="0.985781990521327" startX="0.6824644549763033" startY="0.5687203791469195">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.016857536509633064" green="0.02631578966975212" blue="0.009624755941331387" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.7314185500144958" green="0.7631579041481018" blue="0.7242933511734009" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow fx:id="smwordwrap" layoutX="167.0" layoutY="130.0" prefHeight="25.0" prefWidth="317.0" textAlignment="CENTER">
+                           <children>
+                              <Text fx:id="smtitle" fill="#ebebeb" strokeType="OUTSIDE" strokeWidth="0.0" text="We'll fit the experience to your needs." textAlignment="CENTER" wrappingWidth="300.978515625">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="12.0" right="12.0" top="5.0" />
+                           </padding>
+                        </TextFlow>
+                        <Pane fx:id="card1" layoutX="330.0" layoutY="205.0" onMouseClicked="#empdash" prefHeight="144.0" prefWidth="272.0">
+                           <children>
+                              <ImageView fitHeight="192.0" fitWidth="249.0" layoutX="9.0" layoutY="-39.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@image/Group 1 (2).png" />
+                                 </image>
+                              </ImageView>
+                              <Pane fx:id="imagewrap1" layoutX="106.0" layoutY="18.0" prefHeight="51.0" prefWidth="57.0">
+                                 <children>
+                                    <ImageView fitHeight="37.0" fitWidth="47.0" layoutX="4.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/admincolor.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <TextFlow layoutX="68.0" layoutY="80.0">
+                                 <children>
+                                    <Text fx:id="cardinnerh1" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Dashboard">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="51.0" layoutY="101.0">
+                                 <children>
+                                    <Text fx:id="cardinnerhsm1" fill="#7c7777" strokeType="OUTSIDE" strokeWidth="0.0" text="Update customer information">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                              <FontAwesomeIconView glyphName="ANGLE_RIGHT" layoutX="221.0" layoutY="114.0" selectionFill="#7c7777" textAlignment="CENTER" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <FontAwesomeIconView glyphName="QUESTION_CIRCLE" layoutX="624.0" layoutY="597.0" size="30" wrappingWidth="25.541015625">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </FontAwesomeIconView>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <GridPane alignment="CENTER" prefHeight="800.0" prefWidth="542.0" GridPane.columnIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="803.0" fitWidth="704.0" pickOnBounds="true" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@image/404a9dc1d31d63fbee6b7215a2111ec1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="800.0" prefWidth="714.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="maximize" layoutX="613.0" layoutY="1.0" mnemonicParsing="false" onAction="#maxbtn" prefHeight="42.0" prefWidth="45.0">
+                           <graphic>
+                              <ImageView fitHeight="14.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8-restore-down-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="min" layoutX="568.0" layoutY="1.0" mnemonicParsing="false" onAction="#minbtn" prefHeight="47.0" prefWidth="45.0">
+                           <graphic>
+                              <ImageView fitHeight="13.0" fitWidth="13.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@image/icons8-minimize-30.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="close" layoutX="657.0" layoutY="-1.0" mnemonicParsing="false" onAction="#closebtn" prefHeight="45.0" prefWidth="47.0" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fx:id="cancel" fill="#252525" glyphName="CLOSE" selectionFill="#a13c3c" size="25" stroke="#9e9e9ef5" strokeWidth="4.0" wrappingWidth="20.428571701049805">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </FontAwesomeIconView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,124 @@
+/* @font-face{
+    -fx-font-family: "Helvetica Neue Bold";
+    src: url("/fonts/helvetica/HelveticaNeueBold.otf");
+}
+@font-face{
+    -fx-font-family: "Helvetica Neue Light";
+    src: url("/fonts/helvetica/HelveticaNeueLight.otf");
+}
+@font-face{
+    -fx-font-family: "Helvetica Neue Medium";
+    src: url("/fonts/helvetica/HelveticaNeueMedium.otf");
+}
+    
+@font-face{
+    -fx-font-family: "Helvetica Neue Roman";
+    src: url("/fonts/helvetica/HelveticaNeueRoman.otf");
+} */
+    
+
+/* 
+@import url('font@got.css'); */
+@font-face {
+    -fx-font-family: "DM Sans Extra Bold Italic";
+    src: url("fonts/DMSans-ExtraBoldItalic.ttf");
+}
+
+.protection {
+    -fx-font-family: "DM Sans Extra Bold Italic";
+    -fx-font-size: 30;
+}
+
+#smtext{
+    -fx-font-family: "DM Sans SemiBold";
+   
+
+}
+
+#god{
+    -fx-background-color: red;
+}
+
+#btnnext{
+   
+    -fx-text-fill: white;
+    -fx-background-color: #984aff;
+    -fx-border-radius: 18px;
+    -fx-background-radius: 18px;
+    -fx-font-family: "DM Sans Bold";
+    -fx-font-size: 14px;
+
+}
+.btnanimation:hover{
+    -fx-transition: fill 0.5s ease-in-out;
+}
+
+#svg{
+    -fx-fill: rgb(255, 255, 255);
+}
+
+#close{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+#close:hover{
+    -fx-background-color: red;
+   
+   
+}
+ #close:hover #cancel{
+-fx-stroke: red;
+-fx-fill: #ffff;
+}
+
+#maximize{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+
+#maximize:hover{
+    -fx-background-color: #dad7d769;
+}
+#min:hover{
+    -fx-background-color: #dad7d769;
+}
+#min{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+
+
+#shade{
+    -fx-font-family: "DM Sans Bold";
+  
+}
+#shadem{
+    -fx-font-family: "DM Sans Bold";
+
+}
+#stylep{
+    -fx-font-family: "DM Sans Bold";
+    
+
+}
+
+#homebtn{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-font-size: 13;
+}
+#patnerbtn{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-font-size: 13;
+}#Contactbtn{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-font-size: 13;
+}#Aboutbtn{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-font-size: 13;
+}

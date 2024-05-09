@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.demoproject.demogol.goupdatecontrolar">
+   <children>
+      <Pane fx:id="mainviewcontain" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e5e7ed;">
+         <children>
+            <MFXTextField fx:id="funame" floatMode="DISABLED" layoutX="63.0" layoutY="180.0" prefHeight="29.0" prefWidth="215.0" promptText="Goggle name" style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="69.0" layoutY="161.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="fname" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggle Name" />
+               </children>
+            </TextFlow>
+            <MFXTextField fx:id="guno" floatMode="DISABLED" layoutX="297.0" layoutY="182.0" prefHeight="29.0" prefWidth="215.0" promptText="Goggles no." style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="300.0" layoutY="161.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="ename" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles No." />
+               </children>
+            </TextFlow>
+            <MFXTextField fx:id="guquantity" floatMode="DISABLED" layoutX="64.0" layoutY="238.0" prefHeight="29.0" prefWidth="215.0" promptText="Quantity" style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="69.0" layoutY="219.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="pname" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="300.0" layoutY="219.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="cname" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand" />
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="68.0" layoutY="279.0" prefHeight="21.0" prefWidth="106.0" />
+            <MFXButton fx:id="nextbtn" buttonType="RAISED" depthLevel="LEVEL1" layoutX="878.0" layoutY="62.0" onAction="#handuleupdate" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #9a3bff;" text="Update" textFill="WHITE" />
+            <TextFlow layoutX="49.0" layoutY="8.0" prefHeight="10.0" prefWidth="347.0">
+               <children>
+                  <Text fx:id="heading" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Goggles Data">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+            <Line endX="853.0" layoutX="172.0" layoutY="50.0" startX="-127.0" stroke="#c7c7c7ad" />
+            <MFXButton fx:id="canbtn" depthLevel="LEVEL1" layoutX="795.0" layoutY="61.0" onAction="#closebtn" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #e5e7ed;" text="Cancel" />
+            <Line endX="853.0" layoutX="173.0" layoutY="104.0" startX="-127.0" stroke="#c7c7c7ad" />
+            <Pane layoutX="533.0" layoutY="136.0" prefHeight="272.0" prefWidth="468.0">
+               <children>
+                  <TextFlow layoutX="14.0" layoutY="25.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="degree" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="243.0" layoutY="25.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="depart" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="14.0" layoutY="82.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="gender" strokeType="OUTSIDE" strokeWidth="0.0" text="price" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="244.0" layoutY="83.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="dob" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+                     </children>
+                  </TextFlow>
+                  <MFXTextField fx:id="gucolor" floatMode="DISABLED" layoutX="10.0" layoutY="45.0" prefHeight="29.0" prefWidth="215.0" promptText="Color" style="-fx-background-color: #f3f5f8;" />
+                  <MFXDatePicker fx:id="gudate" layoutX="240.0" layoutY="102.0" prefHeight="29.0" prefWidth="215.0" promptText="Date" style="-fx-background-color: #f3f5f8;" />
+                  <MFXTextField fx:id="gutype" floatMode="DISABLED" layoutX="240.0" layoutY="44.0" prefHeight="29.0" prefWidth="215.0" promptText="Type" style="-fx-background-color: #f3f5f8;" />
+                  <MFXTextField fx:id="guprice" floatMode="DISABLED" layoutX="11.0" layoutY="101.0" prefHeight="29.0" prefWidth="215.0" promptText="Price" style="-fx-background-color: #f3f5f8;" />
+               </children>
+            </Pane>
+            <MFXButton fx:id="fupdate" buttonType="RAISED" layoutX="360.0" layoutY="409.0" onAction="#handuleupdate" prefHeight="36.0" prefWidth="333.0" style="-fx-background-color: #9a3bff; -fx-text-fill: #fff;" text="Update" />
+            <MFXTextField fx:id="gubrand" floatMode="DISABLED" layoutX="297.0" layoutY="237.0" prefHeight="29.0" prefWidth="215.0" promptText="Brand" style="-fx-background-color: #f3f5f8;" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>

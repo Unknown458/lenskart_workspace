@@ -1,0 +1,1021 @@
+/* @import url("font@got.css");
+#fgy{} */
+
+
+
+
+
+
+#titlebar{
+    -fx-background-color: #eef2fd;
+}
+#centerpane{
+    -fx-background-color: #e5e7ed;
+}
+#close{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+#close:hover{
+    -fx-background-color: red;
+   
+   
+}
+ #close:hover #cancel{
+-fx-stroke: red;
+-fx-fill: #ffff;
+}
+
+#maximize{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+
+#maximize:hover{
+    -fx-background-color: #dad7d769;
+}
+#min:hover{
+    -fx-background-color: #dad7d769;
+}
+#min{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+
+#body{
+    -fx-background-color: #e5e7ed;
+}
+
+#mcontain{
+    -fx-background-color: #e5e7ed;
+}
+#mscontain{
+    -fx-background-color: #ffffff;
+}
+#sidebody{
+    -fx-background-color: #e5e7ed;
+}
+#navadd{
+    -fx-background-color: #ffffff;
+}
+
+#sidebody{
+    -fx-background-color: #e5e7ed;
+}
+
+#titlebar{
+    -fx-background-color: #e5e7ed;
+}
+
+#search{
+    -fx-background-color: #f0f2f3;
+}
+
+#inputsearch{
+    -fx-border-color: none;
+    -fx-border-style: none;
+    -fx-border-width: none;
+    -fx-background-color: #f0f2f3;
+
+}
+#emptext{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-font-size: 16px;
+  }
+  #emptext21{
+   -fx-font-family: "DM Sans SemiBold";
+   -fx-font-size: 16px;
+ }
+  #emptext41{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-font-size: 16px;
+  }
+  #emptext31{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-font-size: 16px;
+  }
+
+
+  #emptext2{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-font-size: 16px;
+  }
+  #emptext3{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-font-size: 16px;
+  }
+  #emptext4{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-font-size: 16px;
+  }
+  #emptext5{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-font-size: 16px;
+  }
+  #smtextc{
+    -fx-font-family: "DM Sans Medium";
+    -fx-font-size: 12px;
+}
+
+#smtextc31{
+   -fx-font-family: "DM Sans Medium";
+   -fx-font-size: 12px;
+}
+
+#smtextc21{
+   -fx-font-family: "DM Sans Medium";
+   -fx-font-size: 12px;
+}
+
+#smtextc31{
+   -fx-font-family: "DM Sans Medium";
+   -fx-font-size: 12px;
+}
+#smtextc41{
+   -fx-font-family: "DM Sans Medium";
+   -fx-font-size: 12px;
+}
+#smtextc2{
+    -fx-font-family: "DM Sans Medium";
+    -fx-font-size: 12px;
+}
+#smtextc3{
+    -fx-font-family: "DM Sans Medium";
+    -fx-font-size: 12px;
+}#smtextc4{
+    -fx-font-family: "DM Sans Medium";
+    -fx-font-size: 12px;
+}#smtextc5{
+    -fx-font-family: "DM Sans Medium";
+    -fx-font-size: 12px;
+}
+#cancelbtn{
+    -fx-background-color: #fff;
+    -fx-border-color: none;
+    -fx-border-style: none;
+    -fx-border-width: none;
+    -fx-background-radius: 4px;
+   
+    -fx-max-width: 37px;
+    -fx-max-height: 16px;
+}
+#cancelbtn1{
+    -fx-font-family: "DM Sans 24pt Bold";
+    }
+
+    #dashboard{
+        
+        -fx-border-color: none;
+        -fx-border-style: none;
+        -fx-border-width: none;
+        -fx-background-radius: 6px;
+      -fx-effect: none;
+      
+      
+
+    }
+
+    #dashboard:hover{
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+        -fx-background-color: #fff !important;
+        
+    }
+
+    #dashboard:hover #dashtext{
+        -fx-fill: #000000;
+    }
+
+    #banner{
+        -fx-background-radius: 12px;
+    }
+
+
+
+    #dashboard1{
+        -fx-background-color: #e5e7ed;
+        -fx-border-color: none;
+        -fx-border-style: none;
+        -fx-border-width: none;
+        -fx-background-radius: 6px;
+      -fx-effect: none;
+      
+
+    }
+
+
+    #logoutbtn:hover{
+        -fx-background-color: rgb(255, 0, 0);
+       }
+       #logoutbtn:hover #emptext11{
+           -fx-fill: #fff;
+       }
+       #logoutbtn:hover #icon{
+           -fx-fill: #fff;
+       }
+
+       #emptext11{
+        -fx-font-family: "DM Sans Bold";
+        -fx-font-size: 14px;
+    }
+
+    #emptext111{
+      -fx-font-family: "DM Sans SemiBold";
+      -fx-font-size: 14px;
+  }
+
+
+
+
+
+    #dashboard1:hover{
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+        -fx-background-color: #fff !important;
+    }
+
+    #dashboard1:hover #dashtext1{
+        -fx-fill: #000000;
+    }
+
+
+    #dashboard11{
+        -fx-background-color: #e5e7ed;
+        -fx-border-color: none;
+        -fx-border-style: none;
+        -fx-border-width: none;
+        -fx-background-radius: 6px;
+      -fx-effect: none;
+      
+
+    }
+
+    #dashboard11:hover{
+        -fx-effect: show;
+        -fx-background-color: #fff;
+    }
+
+    #dashboard11:hover #dashtext11{
+        -fx-fill: #000000;
+    }
+
+
+
+    #dashboard111{
+        -fx-background-color: #e5e7ed;
+        -fx-border-color: none;
+        -fx-border-style: none;
+        -fx-border-width: none;
+        -fx-background-radius: 6px;
+      -fx-effect: none;
+      
+
+    }
+
+    #dashboard111:hover{
+        -fx-effect: show;
+        -fx-background-color: #fff;
+    }
+
+    #dashboard111:hover #dashtext111{
+        -fx-fill: #000000;
+    }
+
+
+
+    #dashboard1111{
+        -fx-background-color: #e5e7ed;
+        -fx-border-color: none;
+        -fx-border-style: none;
+        -fx-border-width: none;
+        -fx-background-radius: 6px;
+      -fx-effect: none;
+      
+
+    }
+
+    #dashboard1111:hover{
+        -fx-effect: show;
+        -fx-background-color: #fff;
+    }
+
+
+    #dashboard1111:hover #dashtext1111{
+        -fx-fill: #000000;
+    }
+
+
+
+
+    
+
+    #dashtext{
+        -fx-font-family: "DM Sans SemiBold";
+        -fx-font-size: 13px;
+    }
+    #dashtext1{
+        -fx-font-family: "DM Sans SemiBold";
+        -fx-font-size: 13px;
+    }#dashtext11{
+        -fx-font-family: "DM Sans SemiBold";
+        -fx-font-size: 13px;
+    }#dashtext111{
+        -fx-font-family: "DM Sans SemiBold";
+        -fx-font-size: 13px;
+    }#dashtext1111{
+        -fx-font-family: "DM Sans SemiBold";
+        -fx-font-size: 13px;
+    }
+
+
+     #dashboard:hover #docicon{
+ -fx-fill: #984aff;
+    }
+
+    
+    #dashboard1:hover #empicon{
+        -fx-fill: #984aff;
+           }
+
+           #dashboard11:hover #calicon{
+            -fx-fill: #984aff;
+               }
+               #dashboard111:hover #npticon{
+                -fx-fill: #984aff;
+                   }
+                   #dashboard1111:hover #comicon{
+                    -fx-fill: #984aff;
+                       }
+
+                       #tenko{
+                        -fx-font-family: "DM Sans SemiBold";
+                       }
+
+                       #Crowded{
+                        -fx-font-family: "DM Sans SemiBold";
+                       }
+
+                       #crypter{
+                        -fx-font-family: "DM Sans SemiBold";
+                       }
+
+                       #dribble{
+                        -fx-font-family: "DM Sans SemiBold";
+                       }
+
+                      #report{
+                        -fx-font-family: "DM Sans Medium";
+                      }
+                    
+                      #supportt{
+                        -fx-font-family: "DM Sans Medium";
+                      }
+
+                      #make{
+                        -fx-border-radius: 20px;
+                      }
+                       
+
+                      #scrolltitle{
+                        -fx-font-family: "DM Sans SemiBold";
+                        font-size: 20px;
+                      }
+                      #scrolltitle1{
+                        -fx-font-family: "DM Sans SemiBold";
+                        font-size: 20px;
+                      }
+ 
+                         #showmore{
+                            -fx-font-family: "DM Sans SemiBold";
+                            font-size: 12px;
+                         }
+
+
+                         #fnameemp{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #fnameemp1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fnameemp11{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fnameemp2{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fnameemp21{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #fno{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fno1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fno11{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fno2{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fno21{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #fcolor{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fcolor1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fcolor11{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fcolor2{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fcolor21{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #fshape{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+  
+                         #fshape1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fshape11{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fshape1111{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fshape111{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fshape2{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #fshape21{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+
+
+                         #quntty{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #quntty1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #quntty11{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #quntty2{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #quntty21{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+
+                         #framenoemp{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #framename{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #totall{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         
+                         #brand{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #brand1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #brand2{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #brand21{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #lense{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #lense1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #lensecolor{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #lensecolor1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #lenseno{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #lenseno1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #type{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #type2{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #type21{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+
+                         #quntty2111{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #quntty211{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+
+                         #type1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #type11{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #date{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #date2{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+
+                         #date1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #lenseno3{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #date21{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+
+                         #appbtnemp{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #appbtnemp2update{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                           #appbtnemp2{
+                                                     -fx-font-family: "DM Sans SemiBold";
+                                                  }
+
+                         #appbtnemp21{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                           #appbtnemp21update {
+                                                     -fx-font-family: "DM Sans SemiBold";
+                                                  }
+                         #appbtnemp21m{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #appbtnemp211{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #appbtnemp211update{
+                                                     -fx-font-family: "DM Sans SemiBold";
+                                                  }
+                         #appbtnemp2111{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                        
+
+                         
+                         #appbtnemp1{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #appbtnemp11update{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                          #appbtnemp11{
+                                                     -fx-font-family: "DM Sans SemiBold";
+                                                  }
+                         #appbtnemp111{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #logbtnemp{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+                         #finbtnemp{
+                            -fx-font-family: "DM Sans SemiBold";
+                         }
+
+                         #previewemp{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #previewemp21{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+
+
+                         #previewemp1{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #previewemp11{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #previewemp2{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #canbtnemp{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #canbtnemp{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #canbtnemp2{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #canbtnemp21{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #canbtnemp1{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #canbtnemp11{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+
+                         #nextbtnemp{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         
+                         #nextbtnemp21{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #nextbtnemp212{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #nextbtnemp1{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #nextbtnemp11{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+
+                         #nextbtnemp2{
+                            -fx-font-family: "DM Sans Bold";
+                         }
+                         #emptitle{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+  
+                        #emptitle1{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+
+
+                        #tit{
+                            -fx-font-family: "DM Sans Medium";
+                            
+                           }
+
+                           #tit1{
+                            -fx-font-family: "DM Sans Medium";
+                            
+                           }
+                           #tit11{
+                            -fx-font-family: "DM Sans Medium";
+                            
+                           }
+
+                           #tit2{
+                            -fx-font-family: "DM Sans Medium";
+                            
+                           }
+
+                           #tit21{
+                            -fx-font-family: "DM Sans Medium";
+                            
+                           }
+
+                           #reciptmain{
+                            -fx-border-width: 2px;
+                            -fx-border-style: solid;
+                            -fx-border-color: rgba(216, 215, 215, 0.377);
+                           }
+
+                           #recipttitle{
+                            -fx-font-family: "DM Sans Medium";
+                            
+                           }
+
+                           #recipttit{
+                            -fx-font-family: "DM Sans Medium";
+                           }
+
+                           #recfname{
+                            -fx-font-family: "DM Sans SemiBold";
+                        }
+
+                        #recename{
+                            -fx-font-family: "DM Sans SemiBold";
+                        }
+ 
+                        #recpname{
+                            -fx-font-family: "DM Sans SemiBold";
+                        }
+
+                        #recproname{
+                            -fx-font-family: "DM Sans SemiBold";
+                        }
+
+                        #addrecname{
+                            -fx-font-family: "DM Sans SemiBold";
+                        }
+
+                        #datename{
+                            -fx-font-family: "DM Sans SemiBold";
+                        }
+
+                        #printbtn{
+                            -fx-font-family: "DM Sans Bold";
+                            -fx-font-size: 14px;
+                        }
+
+                        #notice{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+                        #searchid{
+                            -fx-font-family: "DM Sans Medium";
+
+                        }
+
+                        #holdername{
+                            -fx-font-family: "DM Sans Bold";
+                        }
+
+                        #hadd1{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+
+                        #hadd2{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+                        
+                        #hadd3{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+                        #hadd4{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+                        #hadd5{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+                        #hadd6{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+
+                        #cus1{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+
+                        #cusname{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+
+
+                        #cusname{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+
+                        #cusstate{
+                            -fx-font-family: "DM Sans Medium";
+                        }
+                       #recno{
+                        -fx-font-family: "DM Sans Medium";
+                       }
+ 
+                       #curdate{
+                        -fx-font-family: "DM Sans Medium";
+                       }
+
+                       #termres{
+                        -fx-font-family: "DM Sans Medium";
+                       }
+                       #dudate{
+                        -fx-font-family: "DM Sans Medium";
+                       }
+
+
+                       #cusadd5{
+                        -fx-font-family: "DM Sans Medium";
+                       }
+
+                       #recnom{
+                        -fx-font-family: "DM Sans Medium";
+                       }
+
+                       #curnom{
+                        -fx-font-family: "DM Sans Medium";
+                       }
+
+                       #termnom{
+                        -fx-font-family: "DM Sans Medium";
+                       }
+
+                       #duenom{
+                        -fx-font-family: "DM Sans Medium";
+                       }
+
+
+                       #total{
+                        -fx-font-family: "DM Sans Bold";
+
+                       }
+
+                       #totalamo{
+                        -fx-font-family: "DM Sans Bold";
+                       }
+
+
+
+                       
+
+                    .root{
+                     -fx-background-color: #262626;
+                 }
+                 
+                 .table-view{
+                     -fx-background-color: transparent;
+                 }
+                 
+                 .table-view:focused{
+                     -fx-background-color: transparent;
+                 }
+                 
+                 .table-view .column-header-background{
+                     -fx-background-color:#fdfdfc;
+                     -fx-border-color: #a0a0a059;
+                     -fx-border-width: 0px 0px 1px 0px ;
+                     -fx-border-style: solid;
+                 }
+                 #lensemaintable .table-column {
+                     -fx-alignment: CENTER-LEFT;
+
+                   }
+                  
+                   #my-maintable .table-cell {
+                     -fx-alignment: CENTER-LEFT !important;
+                      /* The rest is from caspian.css */
+                 
+                 }
+                 .table-view .column-header .label {
+                     -fx-alignment: CENTER-LEFT;
+                 }
+                 
+                
+
+
+                 .table-view:row-selection .column-header-background .filler{
+                     -fx-background-color:#FFFFFF;
+                 }
+                 .table-view:row-selection .column-header-background .show-hide-columns-button{
+                     -fx-background-color:#e0e0e0;
+                 }
+                 
+                 .table-view .column-header-background .label{
+                     -fx-background-color: transparent;
+                     -fx-text-fill: #575757;
+                     -fx-font-weight:bold;
+                     -fx-font-size:12px;
+                 }
+                 
+                 .table-view .column-header {
+                     -fx-background-color: transparent;
+                     -fx-pref-height:50px;
+                 }
+                 .table-view  .table-column{
+                     -fx-padding: 10 0 0 10;
+                     -fx-border-width: 0px 0px 0px 0px ;
+                 }
+                 
+                 .table-view > .virtual-flow > .scroll-bar:vertical,
+                 .table-view > .virtual-flow > .scroll-bar:vertical > .track,
+                 .table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+                 .table-view > .virtual-flow > .scroll-bar:horizontal,
+                 .table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+                 .table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+                     -fx-background-color: transparent;
+                 }
+                 
+                 .table-view > .virtual-flow > .scroll-bar > .increment-button, 
+                 .table-view > .virtual-flow > .scroll-bar > .decrement-button {
+                     -fx-opacity: 0;
+                 }
+                 
+                 .table-view .table-row-cell{
+                     -fx-background-color:#fff;
+                     -fx-font-size:12px;
+                     -fx-font-weight: BOLD;
+                    -fx-padding: 0px 0px 8px 0px;
+                     
+                    
+                 }
+                 
+                 .table-view .table-row-cell:hover {
+                     -fx-background-color:#e0e0e0;
+                 } 
+                  .table-view .table-row-cell {
+                                  -fx-pref-height:45px;
+                                  }
+                 .table-view .table-row-cell:selected{
+                     -fx-background-color: #7227ffb9;
+                 } 
+                 .table-view:row-selection .virtual-flow .scroll-bar:vertical .thumb{
+                     -fx-background-color:#e0e0e0;
+                     -fx-border-color:#262626;
+                 }
+                 .table-view .table-row-cell:empty{
+                     -fx-background-color:#FFFFFF;
+                      -fx-border-color:#FFFFFF;
+                 } 
+
+
+                 
+                 #viewButton{
+                       
+                  -fx-background-color: #6530f5;
+                  -fx-text-fill: #fff;
+                  
+              }
+              #deleteButton{
+                  
+                  -fx-background-color: #6530f5;
+                  -fx-text-fill: #fff;
+              }
+
+              #viewButton1{
+                       
+               -fx-background-color: #6530f5;
+               -fx-text-fill: #fff;
+               
+           }
+           #reciptmaintable .scroll-bar:horizontal {
+            -fx-height: 0;
+            -fx-opacity: 0;
+        }
+           #deleteButton1{
+               
+               -fx-background-color: #6530f5;
+               -fx-text-fill: #fff;
+           }
+
+           #viewButton2{
+                       
+            -fx-background-color: #6530f5;
+            -fx-text-fill: #fff;
+            
+        }
+        #deleteButton2{
+            
+            -fx-background-color: #6530f5;
+            -fx-text-fill: #fff;
+        }
+        #viewButton3{
+                       
+            -fx-background-color: #6530f5;
+            -fx-text-fill: #fff;
+            
+        }
+        #deleteButton3{
+            
+            -fx-background-color: #6530f5;
+            -fx-text-fill: #fff;
+        }

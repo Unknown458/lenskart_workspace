@@ -1,0 +1,139 @@
+/* @import url("./font@got.css"); */
+
+
+#fgy{}
+
+#navadd{
+    -fx-background-color: #ffffff;
+}
+
+
+#titlebar{
+    -fx-background-color: #eef2fd;
+}
+#close{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+#close:hover{
+    -fx-background-color: red;
+   
+   
+}
+ #close:hover #cancel{
+-fx-stroke: red;
+-fx-fill: #ffff;
+}
+
+#maximize{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+
+#maximize:hover{
+    -fx-background-color: #dad7d769;
+}
+#min:hover{
+    -fx-background-color: #dad7d769;
+}
+#min{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+#imagemain{
+    -fx-background-color:#f0f1f3;
+}
+
+#textmain{
+    -fx-font-family: "DM Sans Bold";
+    -fx-font-size: 20;
+}
+
+#textsm{
+    -fx-font-family: "DM Sans Medium";
+    -fx-font-size: 13;
+}
+
+#secpage{
+    -fx-background-color: #fefefe;
+}
+
+#fcircle{
+    -fx-fill: #dadbdd;
+}
+#fcircle2{
+    -fx-fill: #dadbdd;
+}
+#fcircle3{
+    -fx-fill: black;
+}
+
+#welcome{
+    -fx-font-family: "DM Sans SemiBold";
+    -fx-fill: black;
+}
+#hii{
+    -fx-font-family: "DM Sans Medium";
+}
+#loginin{
+    -fx-font-family: "DM Sans Medium";
+
+}
+#loginin1{
+    -fx-font-family: "DM Sans Medium";
+
+}
+#loginin2{
+    -fx-font-family: "DM Sans Medium";
+
+}
+
+#googlebtn{
+    -fx-font-family: "DM Sans Medium";
+}
+
+#or{
+    -fx-font-family: "DM Sans Medium";
+
+}
+
+#username{
+    -fx-font-family: "DM Sans Medium";
+}
+#password{
+    -fx-font-family: "DM Sans Medium";
+}
+
+#forget{
+    -fx-font-family: "DM Sans Medium";
+}
+#loginbtn{
+    -fx-font-family: "DM Sans Bold" !important;
+    -fx-background-color: #9155f1ee;
+-fx-font-size: 16 !important;
+    -fx-text-fill: white !important;
+}
+
+#backbtn{
+    -fx-background-color: #9155f1ee;
+}
+
+#loginbtn:hover{
+    -fx-font-family: "DM Sans Bold" !important;
+    -fx-background-color: #813af3ee;
+    -fx-font-size: 16 !important;
+    -fx-text-fill: white !important;
+}
+
+#regin{
+    -fx-font-family: "DM Sans Medium";
+}
+#reginew{
+    -fx-font-family: "DM Sans Medium";
+}

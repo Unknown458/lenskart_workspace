@@ -1,0 +1,651 @@
+/* 
+@import url("font@got.css"); */
+
+#fgy{}
+
+
+
+#titlebar{
+    -fx-background-color: #eef2fd;
+}
+#close{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+#close:hover{
+    -fx-background-color: red;
+   
+   
+}
+ #close:hover #cancel{
+-fx-stroke: red;
+-fx-fill: #ffff;
+}
+
+#maximize{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+
+#maximize:hover{
+    -fx-background-color: #dad7d769;
+}
+#min:hover{
+    -fx-background-color: #dad7d769;
+}
+#min{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+
+#body{
+    -fx-background-color: #e5e7ed;
+}
+
+#mcontain{
+    -fx-background-color: #e5e7ed;
+}
+#mscontain{
+    -fx-background-color: #ffffff;
+}
+#sidebody{
+    -fx-background-color: #e5e7ed;
+}
+#navadd{
+    -fx-background-color: #ffffff;
+}
+
+#sidebody{
+    -fx-background-color: #e5e7ed;
+}
+
+#titlebar{
+    -fx-background-color: #e5e7ed;
+}
+
+#search{
+    -fx-background-color: #f0f2f3;
+}
+
+#inputsearch{
+    -fx-border-color: none;
+    -fx-border-style: none;
+    -fx-border-width: none;
+    -fx-background-color: #f0f2f3;
+
+}
+
+#cancelbtn{
+    -fx-background-color: #fff;
+    -fx-border-color: none;
+    -fx-border-style: none;
+    -fx-border-width: none;
+    -fx-background-radius: 4px;
+   
+    -fx-max-width: 37px;
+    -fx-max-height: 16px;
+}
+#cancelbtn1{
+    -fx-font-family: "DM Sans 24pt Bold";
+    }
+
+    #dashboard {
+        -fx-border-color: none;
+        -fx-border-style: none;
+        -fx-border-width: none;
+        -fx-background-radius: 6px;
+        -fx-effect: none;
+    }
+    
+    #dashboard:hover {
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+        -fx-background-color: #fff !important;
+    }
+    #dashboard:hover #dashtext{
+        -fx-fill: #000000;
+    }
+
+    #banner{
+        -fx-background-radius: 12px;
+    }
+
+
+
+    #dashboard1{
+        -fx-background-color: #e5e7ed;
+        -fx-border-color: none;
+        -fx-border-style: none;
+        -fx-border-width: none;
+        -fx-background-radius: 6px;
+      -fx-effect: none;
+      
+
+    }
+
+    #dashboard1:hover{
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+        -fx-background-color: #fff !important;
+    }
+
+    #dashboard1:hover #dashtext1{
+        -fx-fill: #000000;
+    }
+
+
+    #dashboard11{
+        -fx-background-color: #e5e7ed;
+        -fx-border-color: none;
+        -fx-border-style: none;
+        -fx-border-width: none;
+        -fx-background-radius: 6px;
+      -fx-effect: none;
+      
+
+    }
+
+    #dashboard11:hover{
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+        -fx-background-color: #fff;
+    }
+
+    #dashboard11:hover #dashtext11{
+        -fx-fill: #000000;
+    }
+
+
+
+    #dashboard111{
+        -fx-background-color: #e5e7ed;
+        -fx-border-color: none;
+        -fx-border-style: none;
+        -fx-border-width: none;
+        -fx-background-radius: 6px;
+      -fx-effect: none;
+      
+
+    }
+
+    #dashboard111:hover{
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+        -fx-background-color: #fff;
+    }
+
+    #dashboard111:hover #dashtext111{
+        -fx-fill: #000000;
+    }
+
+
+
+    #dashboard1111{
+        -fx-background-color: #e5e7ed;
+        -fx-border-color: none;
+        -fx-border-style: none;
+        -fx-border-width: none;
+        -fx-background-radius: 6px;
+      -fx-effect: none;
+      
+
+    }
+
+    #dashboard1111:hover{
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+        -fx-background-color: #fff;
+    }
+
+
+    #dashboard1111:hover #dashtext1111{
+        -fx-fill: #000000;
+    }
+
+
+
+
+    
+
+    #dashtext{
+        -fx-font-family: "DM Sans SemiBold";
+        -fx-font-size: 13px;
+    }
+    #dashtext1{
+        -fx-font-family: "DM Sans SemiBold";
+        -fx-font-size: 13px;
+    }#dashtext11{
+        -fx-font-family: "DM Sans SemiBold";
+        -fx-font-size: 13px;
+    }#dashtext111{
+        -fx-font-family: "DM Sans SemiBold";
+        -fx-font-size: 13px;
+    }#dashtext1111{
+        -fx-font-family: "DM Sans SemiBold";
+        -fx-font-size: 13px;
+    }
+
+
+     #dashboard:hover #docicon{
+ -fx-fill: #984aff;
+    }
+
+   
+    
+    #dashboard1:hover #empicon{
+        -fx-fill: #984aff;
+           }
+
+           #dashboard11:hover #calicon{
+            -fx-fill: #984aff;
+               }
+               #dashboard111:hover #npticon{
+                -fx-fill: #984aff;
+                   }
+                   #dashboard1111:hover #comicon{
+                    -fx-fill: #984aff;
+                       }
+
+                       #tenko{
+                        -fx-font-family: "DM Sans SemiBold";
+                       }
+
+                       #Crowded{
+                        -fx-font-family: "DM Sans SemiBold";
+                       }
+
+                       #crypter{
+                        -fx-font-family: "DM Sans SemiBold";
+                       }
+
+                       #dribble{
+                        -fx-font-family: "DM Sans SemiBold";
+                       }
+
+                      #report{
+                        -fx-font-family: "DM Sans Medium";
+                      }
+                    
+                      #supportt{
+                        -fx-font-family: "DM Sans Medium";
+                      }
+
+                      #make{
+                        -fx-border-radius: 20px;
+                      }
+                       
+
+                      #emptext{
+                        -fx-font-family: "DM Sans SemiBold";
+                        -fx-font-size: 18px;
+                      }
+                      #emptext1{
+                        -fx-font-family: "DM Sans SemiBold";
+                        -fx-font-size: 18px;
+                      }
+                      #letbtn{
+                        -fx-background-color: #5637df;
+                       
+                    }
+
+                    #letbtn:hover{
+                        -fx-background-color: #7107d4;
+                       
+                    }
+                    #letbtn1:hover{
+                        -fx-background-color: #7107d4;
+                       
+                    }
+                    #letbtn1{
+                        -fx-background-color: #5637df;
+                       
+                    }
+                    #letntext{
+                        -fx-font-family: "DM Sans Bold";
+                        -fx-font-size: 14px;
+                    }
+                    #letntext1{
+                        -fx-font-family: "DM Sans Bold";
+                        -fx-font-size: 14px;
+                    }
+
+                    #emptext11{
+                        -fx-font-family: "DM Sans Bold";
+                        -fx-font-size: 14px;
+                    }
+
+                    /* #mscontain{
+                        -fx-background-image: url("image/banner.jpeg");
+                        -fx-background-position: center;
+                        -fx-background-size: cover;
+                        -fx-background-repeat: no-repeat;
+                    } */
+
+                    #smtextc{
+                        -fx-font-family: "DM Sans Medium";
+                    }
+                    #smtextc1{
+                        -fx-font-family: "DM Sans Medium";
+                    }
+                    #far{
+                        -fx-font-family: "DM Sans Bold";
+                        -fx-font-size: 14px;
+                    }
+
+                    #logoutbtn:hover{
+                     -fx-background-color: rgb(255, 0, 0);
+                    }
+                    #logoutbtn:hover #emptext11{
+                        -fx-fill: #fff;
+                    }
+                    #logoutbtn:hover #icon{
+                        -fx-fill: #fff;
+                    }
+
+
+                   #name:active{
+                    -fx-background-color: #fff;
+                   }
+
+                  #address{
+                  -fx-highlight-fill: rgba(159, 98, 228, 0.26);
+                    -fx-control-inner-background: #f3f5f8;
+                    -fx-highlight-text-fill: black;
+                    -fx-focus-color: transparent;
+                    -fx-faint-focus-color: transparent;
+                    
+                   
+                                      }
+                                      #address:focused {
+                                        -fx-border-color: rgb(178, 12, 255);
+                                        -fx-border-width: 2px;
+                                        -fx-border-radius: 10px;
+                                       
+                                    }
+
+                                   #emptitle{
+                                    -fx-font-family: "DM Sans Medium";
+                                    
+                                   }
+
+                                   #signup{
+                                    -fx-font-family: "DM Sans Bold";
+                                   }
+                                   #term{
+                                    -fx-font-family: "DM Sans SemiBold";
+                                   }
+
+                                   #signsubmit{
+                                    -fx-font-family: "DM Sans Bold";
+                                   }
+                                   #formtab1{
+                                    -fx-font-family: "DM Sans Bold";
+                                   }
+                      #tab2{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+
+                    #tab3{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+                    
+                    #tab4{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+                    #tab5{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+
+                    #partsm{
+                        -fx-font-family: "DM Sans Medium";
+                    }
+                    #fullsm{
+                        -fx-font-family: "DM Sans Medium";
+                    }
+
+                    #appbtn{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #appbtnss{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #appbtnpp{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #logbtn{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #logbtnpp{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #logbtnss{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #finbtn{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #finbtnpp{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #finbtnss{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #apptifomr{
+                        -fx-font-family: "DM Sans Medium";
+                    }
+                    #apptifomrpp{
+                        -fx-font-family: "DM Sans Medium";
+                    }
+                    #apptifomrss{
+                        -fx-font-family: "DM Sans Medium";
+                    }
+                 
+                    #preview{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+
+                    #previewpp{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+                     #previewss{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+                    #canbtn{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+                    #canbtnpp{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+                    #canbtnss{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+
+                    #nextbtn{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+                    #nextbtnpp{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+                    #nextbtnss{
+                        -fx-font-family: "DM Sans Bold";
+                    }
+
+                    #avtarte{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+
+                    #changebtn{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+
+                    #fname{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+
+                    #ename{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+
+                    #pname{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+
+                    #cname{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+ #cnameupdate{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #zname{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+
+                    #cname{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+
+                    #aname{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+
+
+                    #degree{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+
+                    #depart{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    
+                    #gender{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    
+                    #dob{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #salary{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+                    #worktime{
+                        -fx-font-family: "DM Sans SemiBold";
+                    }
+
+
+
+
+
+
+                    .root{
+                        -fx-background-color: #262626;
+                    }
+                    
+                    .table-view{
+                        -fx-background-color: transparent;
+                    }
+                    
+                    .table-view:focused{
+                        -fx-background-color: transparent;
+                    }
+                    
+                    .table-view .column-header-background{
+                        -fx-background-color:#fdfdfc;
+                        -fx-border-color: #a0a0a059;
+                        -fx-border-width: 0px 0px 1px 0px ;
+                        -fx-border-style: solid;
+                    }
+                    #maintable .table-column {
+                        -fx-alignment: CENTER-LEFT;
+
+                      }
+                     
+                      #my-maintable .table-cell {
+                        -fx-alignment: CENTER-LEFT !important;
+                         /* The rest is from caspian.css */
+                    
+                    }
+                    .table-view .column-header .label {
+                        -fx-alignment: CENTER-LEFT;
+                    }
+                    
+                   
+
+
+                    .table-view:row-selection .column-header-background .filler{
+                        -fx-background-color:#FFFFFF;
+                    }
+                    .table-view:row-selection .column-header-background .show-hide-columns-button{
+                        -fx-background-color:#e0e0e0;
+                    }
+                    
+                    .table-view .column-header-background .label{
+                        -fx-background-color: transparent;
+                        -fx-text-fill: #575757;
+                        -fx-font-weight:bold;
+                        -fx-font-size:12px;
+                    }
+                    
+                    .table-view .column-header {
+                        -fx-background-color: transparent;
+                        -fx-pref-height:50px;
+                    }
+                    .table-view  .table-column{
+                        -fx-padding: 10 0 0 10;
+                        -fx-border-width: 0px 0px 0px 0px ;
+                    }
+                    
+                    .table-view > .virtual-flow > .scroll-bar:vertical,
+                    .table-view > .virtual-flow > .scroll-bar:vertical > .track,
+                    .table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+                    .table-view > .virtual-flow > .scroll-bar:horizontal,
+                    .table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+                    .table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+                        -fx-background-color: transparent;
+                    }
+                    
+                    .table-view > .virtual-flow > .scroll-bar > .increment-button, 
+                    .table-view > .virtual-flow > .scroll-bar > .decrement-button {
+                        -fx-opacity: 0;
+                    }
+                    
+                    .table-view .table-row-cell{
+                        -fx-background-color:#fff;
+                        -fx-font-size:12px;
+                        -fx-font-weight: BOLD;
+                       -fx-padding: 0px 0px 8px 0px;
+                        
+                       
+                    }
+                    
+                    .table-view .table-row-cell:hover {
+                        -fx-background-color:#e0e0e0;
+
+                    } 
+
+                    .table-view .table-row-cell:selected{
+                        -fx-background-color: #7227ffb9;
+                    } 
+                    .table-view:row-selection .virtual-flow .scroll-bar:vertical .thumb{
+                        -fx-background-color:#e0e0e0;
+                        -fx-border-color:#262626;
+                    }
+                    .table-view .table-row-cell:empty{
+                        -fx-background-color:#FFFFFF;
+                         -fx-border-color:#FFFFFF;
+                    }
+                     .table-view .table-row-cell {
+                                                      -fx-pref-height:45px;
+                                                      }
+
+                    #viewButton{
+                       
+                        -fx-background-color: #6530f5;
+                        -fx-text-fill: #fff;
+                        
+                    }
+                    #deleteButton{
+                        
+                        -fx-background-color: #6530f5;
+                        -fx-text-fill: #fff;
+                    }

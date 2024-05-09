@@ -1,0 +1,84 @@
+/* @import url("./font@got.css"); */
+
+#fname{
+    -fx-font-family: "DM Sans SemiBold";
+}
+#ename{
+    -fx-font-family: "DM Sans SemiBold";
+}
+#pname{
+    -fx-font-family: "DM Sans SemiBold";
+}
+
+#cname{
+    -fx-font-family: "DM Sans SemiBold";
+}
+#cnameupdate{
+    -fx-font-family: "DM Sans SemiBold";
+}
+
+#zname{
+    -fx-font-family: "DM Sans SemiBold";
+}
+
+#cname{
+    -fx-font-family: "DM Sans SemiBold";
+}
+#aname{
+    -fx-font-family: "DM Sans SemiBold";
+}
+
+#degree{
+    -fx-font-family: "DM Sans SemiBold";
+}
+
+#depart{
+    -fx-font-family: "DM Sans SemiBold";
+}
+#gender{
+    -fx-font-family: "DM Sans SemiBold";
+}
+
+#dob{
+    -fx-font-family: "DM Sans SemiBold";
+}
+#salary{
+    -fx-font-family: "DM Sans SemiBold";
+}
+#worktime{
+    -fx-font-family: "DM Sans SemiBold";
+}
+#heading{
+    -fx-font-family: "DM Sans Medium"; 
+}
+#avtarte{
+    -fx-font-family: "DM Sans SemiBold";
+}
+#passheading{
+    -fx-font-family: "DM Sans Medium"; 
+}
+#changebtn{
+    -fx-font-family: "DM Sans SemiBold";
+}
+#nextbtn{
+-fx-font-family: "DM Sans Bold";}
+
+#signsubmit{
+    -fx-font-family: "DM Sans Bold";
+}
+
+#address{
+    -fx-highlight-fill: rgba(159, 98, 228, 0.26);
+      -fx-control-inner-background: #f3f5f8;
+      -fx-highlight-text-fill: black;
+      -fx-focus-color: transparent;
+      -fx-faint-focus-color: transparent;
+      
+     
+                        }
+                        #address:focused {
+                          -fx-border-color: rgb(178, 12, 255);
+                          -fx-border-width: 2px;
+                          -fx-border-radius: 10px;
+                         
+                      }

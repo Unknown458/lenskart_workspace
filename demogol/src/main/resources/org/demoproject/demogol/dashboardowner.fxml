@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.gleidson28.GNAvatarView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXCheckbox?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.demoproject.demogol.dashcontrol">
+   <left>
+      <VBox fx:id="sidebody" prefHeight="760.0" prefWidth="241.0">
+         <children>
+            <Pane fx:id="body" prefHeight="765.0" prefWidth="1145.0">
+               <children>
+                  <Pane fx:id="search" layoutX="19.0" layoutY="14.0" prefHeight="29.0" prefWidth="206.0" style="-fx-background-radius: 4px;">
+                     <children>
+                        <FontAwesomeIconView fill="#9a9595" glyphName="SEARCH" layoutX="8.0" layoutY="19.0" size="14" />
+                        <MFXTextField fx:id="inputsearch" floatMode="DISABLED" layoutX="29.0" layoutY="1.0" prefHeight="27.0" prefWidth="177.0" promptText="Search...">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </MFXTextField>
+                        <Pane fx:id="cancelbtn" layoutX="165.0" layoutY="7.0" maxHeight="17.0" prefHeight="16.0" prefWidth="32.0">
+                           <children>
+                              <Text fx:id="cancelbtn1" fill="#727171" layoutX="9.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XK">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Button fx:id="dashboard11" alignment="BOTTOM_LEFT" layoutX="18.0" layoutY="143.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="206.0">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="3.5" offsetX="1.0" offsetY="1.0" radius="0.875" spread="1.0" width="2.0">
+                           <color>
+                              <Color red="0.8299999833106995" green="0.8299999833106995" blue="0.8299999833106995" opacity="0.6404579877853394" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <graphic>
+                        <TextFlow prefHeight="23.0" prefWidth="137.0">
+                           <children>
+                              <FontAwesomeIconView fx:id="calicon" fill="#9a9595" glyphName="CALENDAR" size="14" />
+                              <Text fx:id="dashtext11" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="    Calendar" wrappingWidth="59.98046875" />
+                           </children>
+                           <padding>
+                              <Insets left="1.0" top="2.0" />
+                           </padding>
+                        </TextFlow>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="dashboard111" alignment="BOTTOM_LEFT" layoutX="18.0" layoutY="178.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="206.0">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="3.5" offsetX="1.0" offsetY="1.0" radius="0.875" spread="1.0" width="2.0">
+                           <color>
+                              <Color red="0.8299999833106995" green="0.8299999833106995" blue="0.8299999833106995" opacity="0.6404579877853394" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <graphic>
+                        <TextFlow prefHeight="23.0" prefWidth="137.0">
+                           <children>
+                              <FontAwesomeIconView fx:id="npticon" fill="#9a9595" glyphName="BELL" size="14" />
+                              <Text fx:id="dashtext111" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="    Notifications" wrappingWidth="59.98046875" />
+                           </children>
+                           <padding>
+                              <Insets left="1.0" top="2.0" />
+                           </padding>
+                        </TextFlow>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="dashboard1111" alignment="BOTTOM_LEFT" layoutX="19.0" layoutY="212.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="206.0">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="3.5" offsetX="1.0" offsetY="1.0" radius="0.875" spread="1.0" width="2.0">
+                           <color>
+                              <Color red="0.8299999833106995" green="0.8299999833106995" blue="0.8299999833106995" opacity="0.6404579877853394" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <graphic>
+                        <TextFlow prefHeight="23.0" prefWidth="137.0">
+                           <children>
+                              <FontAwesomeIconView fx:id="comicon" fill="#9a9595" glyphName="BRIEFCASE" size="14" />
+                              <Text fx:id="dashtext1111" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="    Company" wrappingWidth="59.98046875" />
+                           </children>
+                           <padding>
+                              <Insets left="1.0" top="2.0" />
+                           </padding>
+                        </TextFlow>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Line endX="100.0" layoutX="121.0" layoutY="267.0" startX="-100.0" stroke="#c9c9c9b5" />
+                  <TextFlow layoutX="19.0" layoutY="283.0" prefHeight="26.0" prefWidth="94.0">
+                     <children>
+                        <Text fx:id="far" fill="#303030" strokeType="OUTSIDE" strokeWidth="0.0" text="Favourites">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <FontAwesomeIconView fill="#aaa9a9" glyphName="PLUS" layoutX="212.0" layoutY="299.0" selectionFill="#b2afaf">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+                  <TextFlow layoutX="22.0" layoutY="312.0" prefHeight="24.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8c2f5" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="13.0" />
+                        <Text fx:id="tenko" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="     Tenko" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="48.78515625" />
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="2.0" />
+                     </padding>
+                  </TextFlow>
+                  <TextFlow layoutX="22.0" layoutY="341.0" prefHeight="24.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#baa7e8" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="13.0" />
+                        <Text fx:id="Crowded" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="     Crowded" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="48.78515625" />
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="2.0" />
+                     </padding>
+                  </TextFlow>
+                  <TextFlow layoutX="22.0" layoutY="370.0" prefHeight="24.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeb2a9" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="13.0" />
+                        <Text fx:id="crypter" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="     Crypter" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="48.78515625" />
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="2.0" />
+                     </padding>
+                  </TextFlow>
+                  <TextFlow layoutX="22.0" layoutY="401.0" prefHeight="24.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ef2cb" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="13.0" />
+                        <Text fx:id="dribble" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="     Dribble Meetup" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="48.78515625" />
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="2.0" />
+                     </padding>
+                  </TextFlow>
+                  <TextFlow layoutX="26.0" layoutY="576.0" prefHeight="20.0" prefWidth="200.0" />
+                  <TextFlow layoutX="30.0" layoutY="621.0" prefHeight="25.0" prefWidth="182.0">
+                     <children>
+                        <FontAwesomeIconView fill="#323232" glyphName="COMMENTS" size="16" />
+                        <Text fx:id="supportt" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="   Support">
+                           <font>
+                              <Font name="Open Sans Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="31.0" layoutY="646.0" prefHeight="25.0" prefWidth="191.0">
+                     <children>
+                        <FontAwesomeIconView fill="#323232" glyphName="INFO_CIRCLE" size="16" />
+                        <Text fx:id="report" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="   Report">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <MFXButton fx:id="dashboard" layoutX="19.0" layoutY="71.0" onAction="#dash" prefHeight="31.0" prefWidth="206.0" text=" ">
+                     <graphic>
+                        <Pane prefHeight="24.0" prefWidth="201.0">
+                           <children>
+                              <FontAwesomeIconView fx:id="docicon" fill="#974dff" glyphName="DASHBOARD" layoutX="-1.0" layoutY="16.0" size="14" />
+                              <Text fx:id="dashtext" fill="#323232" layoutX="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    Dashboard" wrappingWidth="72.98046875" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                  </MFXButton>
+                  <MFXButton fx:id="dashboard1" layoutX="18.0" layoutY="106.0" onAction="#emp" prefHeight="31.0" prefWidth="206.0" text=" ">
+                     <graphic>
+                        <TextFlow prefHeight="23.0" prefWidth="188.0">
+                           <children>
+                              <FontAwesomeIconView fx:id="empicon" fill="#9a9595" glyphName="USERS" size="14" text="" />
+                              <Text fx:id="dashtext1" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="    Employess" wrappingWidth="59.98046875" />
+                           </children>
+                           <padding>
+                              <Insets left="1.0" top="2.0" />
+                           </padding>
+                        </TextFlow>
+                     </graphic>
+                  </MFXButton>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox fx:id="titlebar" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="364.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Lenskart-logo (1) (2).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="833.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/secure.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="15.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <FlowPane prefHeight="40.0" prefWidth="776.0">
+                     <children>
+                        <Pane fx:id="navadd" prefWidth="521.0" style="-fx-background-radius: 12px;">
+                           <children>
+                              <TextFlow prefHeight="26.0" prefWidth="490.0" style="-fx-background-radius: 12px;" textAlignment="CENTER">
+                                 <children>
+                                    <FontAwesomeIconView glyphName="LOCK" wrappingWidth="27.714279174804688" />
+                                    <Text fx:id="navowner" strokeType="OUTSIDE" strokeWidth="0.0" text="   Owner Dashboard" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="106.07615661621094" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="3.0" />
+                                 </padding>
+                              </TextFlow>
+                              <ImageView fitHeight="15.0" fitWidth="39.0" layoutX="496.0" layoutY="5.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8-reload-67.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets top="8.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="4.0" />
+                     </HBox.margin>
+                  </FlowPane>
+               </children>
+            </HBox>
+            <Button fx:id="min" mnemonicParsing="false" onAction="#minbtn" prefHeight="47.0" prefWidth="45.0">
+               <graphic>
+                  <ImageView fitHeight="13.0" fitWidth="13.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@image/icons8-minimize-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="maximize" mnemonicParsing="false" onAction="#maxbtn" prefHeight="42.0" prefWidth="45.0">
+               <graphic>
+                  <ImageView fitHeight="14.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/icons8-restore-down-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="close" mnemonicParsing="false" onAction="#closebtn" prefHeight="45.0" prefWidth="47.0">
+               <graphic>
+                  <FontAwesomeIconView fx:id="cancel" fill="#252525" glyphName="CLOSE" selectionFill="#a13c3c" size="25" stroke="WHITE" strokeWidth="4.0" wrappingWidth="20.428571701049805">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane fx:id="mcontain" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <Pane layoutX="-4.0" style="-fx-background-color: #e5e7ed;">
+               <children>
+                  <Pane fx:id="viewemp1" layoutY="11.0" prefHeight="749.0" prefWidth="1045.0" style="-fx-background-color: #f3f5f8; -fx-background-radius: 12px;" />
+                  <Pane fx:id="PERSONAL" layoutX="5.0" layoutY="142.0" prefHeight="596.0" prefWidth="1036.0" style="-fx-background-color: #fff; -fx-background-radius: 12px;">
+                     <children>
+                        <Pane layoutX="28.0" layoutY="8.0" prefHeight="34.0" prefWidth="395.0" style="-fx-background-color: #dee5e9; -fx-background-radius: 8px;">
+                           <children>
+                              <MFXButton fx:id="appbtnpp" layoutX="2.0" layoutY="2.0" onAction="#app1form" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Application Form" />
+                              <MFXButton fx:id="logbtnpp" layoutX="137.0" layoutY="2.0" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Personal Info" />
+                              <MFXButton fx:id="finbtnpp" layoutX="273.0" layoutY="2.0" onAction="#finsh2" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Finish" />
+                           </children>
+                        </Pane>
+                        <Line endX="935.0" layoutX="101.0" layoutY="53.0" startX="-100.0" stroke="#c7c7c7a1" />
+                        <TextFlow layoutX="60.0" layoutY="66.0" prefHeight="43.0" prefWidth="262.0">
+                           <children>
+                              <Text fx:id="apptifomrpp" strokeType="OUTSIDE" strokeWidth="0.0" text="Constomize application form">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <MFXButton fx:id="nextbtnpp" buttonType="RAISED" depthLevel="LEVEL1" layoutX="939.0" layoutY="63.0" onAction="#next2" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #9a3bff;" text="Next" textFill="WHITE" />
+                        <MFXButton fx:id="canbtnpp" depthLevel="LEVEL1" layoutX="853.0" layoutY="64.0" prefHeight="31.0" prefWidth="76.0" text="Cancel" />
+                        <MFXButton fx:id="previewpp" depthLevel="LEVEL1" layoutX="781.0" layoutY="64.0" prefHeight="31.0" prefWidth="73.0" text="Preview" />
+                        <Line endX="935.0" layoutX="101.0" layoutY="105.0" startX="-100.0" stroke="#c7c7c7a1" />
+                        <Pane fx:id="INFO" layoutY="107.0" prefHeight="490.0" prefWidth="1035.0" style="-fx-background-color: #fff;">
+                           <children>
+                              <MFXTextField fx:id="degreet" floatMode="DISABLED" layoutX="118.0" layoutY="67.0" prefHeight="31.0" prefWidth="321.0" promptText="Your degree" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="120.0" layoutY="46.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="degree" strokeType="OUTSIDE" strokeWidth="0.0" text="Degree" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="511.0" layoutY="45.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="depart" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" />
+                                    <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text=" *" />
+                                 </children>
+                              </TextFlow>
+                              <MFXComboBox fx:id="department" floatMode="DISABLED" layoutX="509.0" layoutY="66.0" prefHeight="31.0" prefWidth="321.0" promptText="Your department" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="120.0" layoutY="137.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="gender" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" />
+                                    <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text=" *" />
+                                 </children>
+                              </TextFlow>
+                              <MFXComboBox fx:id="gendertf" floatMode="DISABLED" layoutX="118.0" layoutY="158.0" prefHeight="31.0" prefWidth="321.0" promptText="Your gender" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="511.0" layoutY="137.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="dob" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of birth" />
+                                    <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text=" *" />
+                                 </children>
+                              </TextFlow>
+                              <MFXDatePicker fx:id="dobtf" layoutX="509.0" layoutY="158.0" prefHeight="6.0" prefWidth="321.0" promptText="Your DOB" style="-fx-background-color: #f3f5f8;" />
+                              <MFXTextField fx:id="salarytf" floatMode="DISABLED" layoutX="118.0" layoutY="258.0" prefHeight="31.0" prefWidth="321.0" promptText="Your salary" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="120.0" layoutY="237.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="salary" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="512.0" layoutY="237.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="worktime" strokeType="OUTSIDE" strokeWidth="0.0" text="Work Time" />
+                                 </children>
+                              </TextFlow>
+                              <MFXComboBox fx:id="worktimetf" floatMode="DISABLED" layoutX="510.0" layoutY="258.0" prefHeight="31.0" prefWidth="321.0" promptText="Your work time" style="-fx-background-color: #f3f5f8;" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="SIGNUP" layoutX="5.0" layoutY="142.0" prefHeight="596.0" prefWidth="1036.0" style="-fx-background-color: #fff; -fx-background-radius: 12px;">
+                     <children>
+                        <Pane layoutX="28.0" layoutY="8.0" prefHeight="34.0" prefWidth="395.0" style="-fx-background-color: #dee5e9; -fx-background-radius: 8px;">
+                           <children>
+                              <MFXButton fx:id="appbtnss" layoutX="2.0" layoutY="2.0" onAction="#app1form1" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Application Form" />
+                              <MFXButton fx:id="logbtnss" layoutX="137.0" layoutY="2.0" onAction="#logindetail2" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Login Details" />
+                              <MFXButton fx:id="finbtnss" layoutX="271.0" layoutY="2.0" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Finish" />
+                           </children>
+                        </Pane>
+                        <Line endX="935.0" layoutX="101.0" layoutY="53.0" startX="-100.0" stroke="#c7c7c7a1" />
+                        <TextFlow layoutX="60.0" layoutY="66.0" prefHeight="43.0" prefWidth="262.0">
+                           <children>
+                              <Text fx:id="apptifomrss" strokeType="OUTSIDE" strokeWidth="0.0" text="Constomize application form">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <MFXButton fx:id="nextbtnss" buttonType="RAISED" depthLevel="LEVEL1" layoutX="939.0" layoutY="63.0" onAction="#submit" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #9a3bff;" text="Submit" textFill="WHITE" />
+                        <MFXButton fx:id="canbtnss" depthLevel="LEVEL1" layoutX="853.0" layoutY="64.0" prefHeight="31.0" prefWidth="76.0" text="Cancel" />
+                        <MFXButton fx:id="previewss" depthLevel="LEVEL1" layoutX="781.0" layoutY="64.0" prefHeight="31.0" prefWidth="73.0" text="Preview" />
+                        <Line endX="935.0" layoutX="101.0" layoutY="105.0" startX="-100.0" stroke="#c7c7c7a1" />
+                        <MFXTextField fx:id="usernametf" floatMode="DISABLED" layoutX="315.0" layoutY="234.0" prefHeight="36.0" prefWidth="333.0" promptText="Enter Username" style="-fx-background-color: #f3f5f8;" />
+                        <MFXPasswordField fx:id="passwordtf" floatMode="DISABLED" layoutX="315.0" layoutY="289.0" prefHeight="36.0" prefWidth="333.0" promptText="Enter Password" style="-fx-background-color: #f3f5f8;" />
+                        <TextFlow layoutX="389.0" layoutY="172.0" prefHeight="27.0" prefWidth="185.0" textAlignment="CENTER">
+                           <children>
+                              <Text fx:id="signup" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" textAlignment="CENTER" wrappingWidth="22.13671875">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <MFXCheckbox fx:id="checkbox" contentDisposition="CENTER" layoutX="317.0" layoutY="350.0" prefHeight="16.0" prefWidth="13.0" />
+                        <TextFlow layoutX="342.0" layoutY="352.0" prefHeight="22.0" prefWidth="328.0">
+                           <children>
+                              <Text fx:id="term" strokeType="OUTSIDE" strokeWidth="0.0" text="Once a username is submitted, it cannot be changed" textAlignment="CENTER" />
+                           </children>
+                        </TextFlow>
+                        <MFXButton fx:id="signsubmit" buttonType="RAISED" layoutX="315.0" layoutY="397.0" onAction="#submit" prefHeight="36.0" prefWidth="333.0" style="-fx-background-color: #9a3bff; -fx-text-fill: #fff;" text="Submit" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="MAINFORM" layoutX="-1.0" layoutY="11.0" prefHeight="749.0" prefWidth="1045.0" style="-fx-background-color: #f3f5f8; -fx-background-radius: 12px;">
+                     <children>
+                        <TextFlow layoutX="46.0" layoutY="45.0" prefHeight="21.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="partsm" fill="#838282" strokeType="OUTSIDE" strokeWidth="0.0" text="Part time  ." />
+                              <Text fx:id="fullsm" fill="#838282" strokeType="OUTSIDE" strokeWidth="0.0" text="  Full time" />
+                           </children>
+                        </TextFlow>
+                        <TextFlow fx:id="faem" layoutX="21.0" layoutY="91.0" prefHeight="21.0" prefWidth="68.0" stylesheets="@css/dashbord.css">
+                           <children>
+                              <Text fx:id="formtab1" fill="#575757" strokeType="OUTSIDE" strokeWidth="0.0" text="FORM" />
+                           </children>
+                        </TextFlow>
+                        <Circle fill="WHITE" layoutX="24.0" layoutY="30.0" radius="12.0" stroke="#c6c6c663" strokeType="INSIDE" />
+                        <TextFlow layoutX="93.0" layoutY="91.0" prefHeight="21.0" prefWidth="103.0">
+                           <children>
+                              <Text fx:id="tab2" fill="#575757c9" strokeType="OUTSIDE" strokeWidth="0.0" text="JOB DETAILS" />
+                           </children>
+                        </TextFlow>
+                        <TextFlow layoutX="197.0" layoutY="91.0" prefHeight="27.0" prefWidth="125.0">
+                           <children>
+                              <Text fx:id="tab3" fill="#575757c9" strokeType="OUTSIDE" strokeWidth="0.0" text="TIMELINE &amp; NOTES" />
+                           </children>
+                        </TextFlow>
+                        <TextFlow layoutX="338.0" layoutY="91.0" prefHeight="21.0" prefWidth="103.0">
+                           <children>
+                              <Text fx:id="tab4" fill="#575757c9" strokeType="OUTSIDE" strokeWidth="0.0" text="HIRING TEAM" />
+                           </children>
+                        </TextFlow>
+                        <FontAwesomeIconView glyphName="ANGLE_LEFT" layoutX="20.0" layoutY="36.0" size="16" />
+                        <TextFlow layoutX="455.0" layoutY="91.0" prefHeight="21.0" prefWidth="103.0">
+                           <children>
+                              <Text fx:id="tab5" fill="#575757c9" strokeType="OUTSIDE" strokeWidth="0.0" text="SETTINGS" />
+                           </children>
+                        </TextFlow>
+                        <Pane fx:id="apllicationformmm" layoutX="6.0" layoutY="131.0" prefHeight="596.0" prefWidth="1036.0" style="-fx-background-color: #fff; -fx-background-radius: 12px;">
+                           <children>
+                              <Pane layoutX="28.0" layoutY="8.0" prefHeight="34.0" prefWidth="395.0" style="-fx-background-color: #dee5e9; -fx-background-radius: 8px;">
+                                 <children>
+                                    <MFXButton fx:id="appbtn" layoutX="2.0" layoutY="2.0" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Application Form" />
+                                    <MFXButton fx:id="logbtn" layoutX="137.0" layoutY="2.0" onAction="#logindetail1" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Login Details" />
+                                    <MFXButton fx:id="finbtn" layoutX="273.0" layoutY="2.0" onAction="#finish1" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Finish" />
+                                 </children>
+                              </Pane>
+                              <Line endX="935.0" layoutX="101.0" layoutY="53.0" startX="-100.0" stroke="#c7c7c7a1" />
+                              <TextFlow layoutX="60.0" layoutY="66.0" prefHeight="43.0" prefWidth="262.0">
+                                 <children>
+                                    <Text fx:id="apptifomr" strokeType="OUTSIDE" strokeWidth="0.0" text="Constomize application form">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                              <MFXButton fx:id="nextbtn" buttonType="RAISED" depthLevel="LEVEL1" layoutX="939.0" layoutY="63.0" onAction="#next1" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #9a3bff;" text="Next" textFill="WHITE" />
+                              <MFXButton fx:id="canbtn" depthLevel="LEVEL1" layoutX="853.0" layoutY="64.0" prefHeight="31.0" prefWidth="76.0" text="Cancel" />
+                              <MFXButton fx:id="preview" depthLevel="LEVEL1" layoutX="781.0" layoutY="64.0" prefHeight="31.0" prefWidth="73.0" text="Preview" />
+                              <Line endX="935.0" layoutX="101.0" layoutY="105.0" startX="-100.0" stroke="#c7c7c7a1" />
+                              <Pane layoutX="1.0" layoutY="107.0" prefHeight="490.0" prefWidth="1035.0">
+                                 <children>
+                                    <MFXButton fx:id="changebtn" buttonType="RAISED" depthLevel="LEVEL1" layoutX="194.0" layoutY="45.0" onAction="#addimage" prefHeight="25.0" prefWidth="105.0" style="-fx-background-radius: 12px;" text="Change Image" />
+                                    <TextFlow layoutX="197.0" layoutY="19.0" prefHeight="27.0" prefWidth="147.0">
+                                       <children>
+                                          <Text fx:id="avtarte" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Your Image">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="fullname" floatMode="DISABLED" layoutX="120.0" layoutY="123.0" prefHeight="31.0" prefWidth="321.0" promptText="Your full name" style="-fx-background-color: #f3f5f8;" />
+                                 </children>
+                              </Pane>
+                              <GNAvatarView fx:id="avtar" layoutX="94.0" layoutY="110.0" prefHeight="80.0" prefWidth="99.0" type="CIRCLE">
+                                 <image>
+                                    <Image url="@image/3d-render-little-boy-with-eyeglasses-blue-shirt_1142-50994.jpeg" />
+                                 </image>
+                              </GNAvatarView>
+                              <TextFlow layoutX="121.0" layoutY="208.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="fname" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" />
+                                    <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text=" *" />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="email" floatMode="DISABLED" layoutX="472.0" layoutY="229.0" prefHeight="34.0" prefWidth="319.0" promptText="Your email" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="472.0" layoutY="207.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="ename" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+                                    <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text=" *" />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="phoneno" floatMode="DISABLED" layoutX="122.0" layoutY="303.0" prefHeight="31.0" prefWidth="321.0" promptText="Your phone number" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="122.0" layoutY="281.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="pname" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+                                    <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text=" *" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="476.0" layoutY="280.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="cname" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" />
+                                 </children>
+                              </TextFlow>
+                              <MFXFilterComboBox fx:id="country" floatMode="DISABLED" layoutX="472.0" layoutY="303.0" prefHeight="31.0" prefWidth="319.0" promptText="Your country" searchText="" style="-fx-background-color: #f3f5f8;" />
+                              <MFXTextField fx:id="zipcode" floatMode="DISABLED" layoutX="122.0" layoutY="378.0" prefHeight="31.0" prefWidth="321.0" promptText="Your Zip code" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="122.0" layoutY="356.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="zname" strokeType="OUTSIDE" strokeWidth="0.0" text="Zip code" />
+                                    <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text=" *" />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="city" floatMode="DISABLED" layoutX="476.0" layoutY="378.0" prefHeight="31.0" prefWidth="321.0" promptText="Your city" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="476.0" layoutY="356.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="cnameupdate" strokeType="OUTSIDE" strokeWidth="0.0" text="City" />
+                                    <Text fx:id="cname2" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text=" *" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="123.0" layoutY="434.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="aname" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+                                    <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text=" *" />
+                                 </children>
+                              </TextFlow>
+                              <TextArea fx:id="address" layoutX="121.0" layoutY="455.0" prefHeight="62.0" prefWidth="677.0" promptText="Your address" style="-fx-background-radius: 12px;">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                           <effect>
+                              <DropShadow offsetY="1.0">
+                                 <color>
+                                    <Color opacity="0.12977099418640137" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Pane>
+                        <TextFlow layoutX="46.0" layoutY="16.0" prefHeight="27.0" prefWidth="216.0">
+                           <children>
+                              <Text fx:id="emptitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Employee  " wrappingWidth="22.13671875">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <FontAwesomeIconView fill="#abaaaabf" glyphName="ELLIPSIS_H" size="16" />
+                           </children>
+                        </TextFlow>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="viewemp" layoutX="-1.0" layoutY="11.0" prefHeight="749.0" prefWidth="1045.0" style="-fx-background-color: #f3f5f8; -fx-background-radius: 12px;">
+                     <children>
+                        <TableView fx:id="maintable" layoutX="1.0" prefHeight="704.0" prefWidth="1046.0">
+                          <columns>
+                              <TableColumn fx:id="avtartable" editable="false" prefWidth="45.0" text=" " />
+                            <TableColumn fx:id="nametable" editable="false" prefWidth="171.0" text="Full Name" />
+                              <TableColumn fx:id="emailtable" editable="false" minWidth="0.0" prefWidth="156.0" text="E-mail" />
+                              <TableColumn fx:id="locationtable" editable="false" prefWidth="118.0" text="Location" />
+                              <TableColumn fx:id="idtable" editable="false" prefWidth="83.0" text="ID" />
+                              <TableColumn fx:id="usernametable" editable="false" prefWidth="116.0" text="Username" />
+                              <TableColumn fx:id="passwordtable" editable="false" minWidth="7.0" prefWidth="105.0" text="Passowrd" />
+                              <TableColumn fx:id="viewColumn" editable="false" prefWidth="128.0" text=" " />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="firstpage" layoutX="-2.0" layoutY="8.0" prefHeight="753.0" prefWidth="1047.0" style="-fx-background-color: #e5e7ed;">
+                     <children>
+                        <Pane layoutX="2.0" layoutY="272.0" minHeight="373.0" minWidth="1020.2851454751">
+                           <children>
+                              <MFXButton buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="19.0" layoutY="12.0" prefHeight="184.0" prefWidth="447.0" rippleColor="#bbcdff" style="-fx-background-radius: 12px; -fx-background-color: #fff;" text=" ">
+                                 <textFill>
+                                    <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </MFXButton>
+                              <ImageView fitHeight="169.0" fitWidth="220.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/open-job-offer-position-employee-hiring-concept-scene-businessman-offering-empty-company-chair-search-hire-smiling-184183041-removebg-preview.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust contrast="0.33" hue="0.06" saturation="0.02" />
+                                 </effect>
+                              </ImageView>
+                              <TextFlow layoutX="210.0" layoutY="32.0" prefHeight="34.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="emptext" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Employee" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="209.0" layoutY="63.0" prefHeight="54.0" prefWidth="240.0">
+                                 <children>
+                                    <Text fx:id="smtextc" fill="#4d4d4d" strokeType="OUTSIDE" strokeWidth="0.0" text="Start by entering their details, including their profession/title, contact information, and any other relevant details" wrappingWidth="221.208984375">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                              <MFXButton fx:id="letbtn" buttonType="RAISED" depthLevel="LEVEL1" layoutX="224.0" layoutY="128.0" onAction="#addemp" prefHeight="32.0" prefWidth="156.0" text=" " textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Open Sans ExtraBold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <TextFlow prefHeight="23.0" prefWidth="125.0">
+                                       <children>
+                                          <Text fx:id="letntext" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="       Let's Start">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets top="2.0" />
+                                       </padding>
+                                    </TextFlow>
+                                 </graphic>
+                              </MFXButton>
+                              <MFXButton buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="479.0" layoutY="12.0" prefHeight="184.0" prefWidth="440.0" rippleColor="#bbcdff" style="-fx-background-radius: 12px; -fx-background-color: #fff;" text=" ">
+                                 <textFill>
+                                    <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </MFXButton>
+                              <ImageView fitHeight="169.0" fitWidth="220.0" layoutX="460.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/online-cv-application-job-search-flat-concept-apply-scene-modern-young-professional-applicant-resume-building-human-176665774-removebg-preview.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust contrast="0.33" hue="0.06" saturation="0.02" />
+                                 </effect>
+                              </ImageView>
+                              <TextFlow layoutX="670.0" layoutY="31.0" prefHeight="34.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="emptext1" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="View Employees" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="669.0" layoutY="62.0" prefHeight="54.0" prefWidth="240.0">
+                                 <children>
+                                    <Text fx:id="smtextc1" fill="#4d4d4d" strokeType="OUTSIDE" strokeWidth="0.0" text="Get an overview of your workforce, including their names, professions, contact information, and any other relevant details." wrappingWidth="221.208984375">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                              <MFXButton fx:id="letbtn1" buttonType="RAISED" depthLevel="LEVEL1" layoutX="684.0" layoutY="127.0" onAction="#viewemp" prefHeight="32.0" prefWidth="156.0" text=" " textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Open Sans ExtraBold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <TextFlow prefHeight="23.0" prefWidth="125.0">
+                                       <children>
+                                          <Text fx:id="letntext1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="       Let's Start">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets top="2.0" />
+                                       </padding>
+                                    </TextFlow>
+                                 </graphic>
+                              </MFXButton>
+                              <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_RIGHT" layoutX="339.0" layoutY="150.28570556640625" size="16" />
+                              <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_RIGHT" layoutX="800.0" layoutY="149.28570556640625" size="16" />
+                              <FontAwesomeIconView glyphName="QUESTION_CIRCLE" layoutX="1005.0" layoutY="369.0" size="28" wrappingWidth="15.285714149475098" />
+                              <MFXButton fx:id="logoutbtn" alignment="CENTER" buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="397.0" layoutY="270.0" onAction="#logout" prefHeight="52.0" prefWidth="164.0" rippleColor="#ffbdbd" style="-fx-background-radius: 12px;" text=" " textAlignment="CENTER">
+                                 <textFill>
+                                    <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <Glow level="0.02" />
+                                 </effect>
+                                 <graphic>
+                                    <Pane prefHeight="47.0" prefWidth="155.0">
+                                       <children>
+                                          <TextFlow layoutX="21.0" layoutY="4.0" prefHeight="40.0" prefWidth="36.0" textAlignment="CENTER">
+                                             <children>
+                                                <FontAwesomeIconView fx:id="icon" glyphName="SIGN_OUT" size="28" textOrigin="BOTTOM" wrappingWidth="26.0" />
+                                             </children>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets top="5.0" />
+                                             </padding>
+                                          </TextFlow>
+                                          <TextFlow layoutX="52.0" layoutY="12.0" prefHeight="27.0" prefWidth="87.0">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <children>
+                                                <Text fx:id="emptext11" fill="#323232" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="  Log Out" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="57.763671875" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </TextFlow>
+                                       </children>
+                                    </Pane>
+                                 </graphic>
+                              </MFXButton>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="mscontain" layoutX="10.0" layoutY="4.0" prefHeight="227.0" prefWidth="912.0" style="-fx-background-radius: 12px; -fx-border-radius: 12px;">
+                           <effect>
+                              <DropShadow blurType="GAUSSIAN" height="9.27" offsetY="1.0" radius="7.0675">
+                                 <color>
+                                    <Color opacity="0.06488549709320068" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <ImageView fx:id="img" fitHeight="219.0" fitWidth="899.0" layoutX="6.0" layoutY="5.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@image/banner.jpeg" />
+                                 </image>
+                                 <effect>
+                                    <GaussianBlur radius="2.0" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

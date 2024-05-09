@@ -1,0 +1,67 @@
+@font-face {
+    -fx-font-family: "DM Sans Bold Italic";
+    src: url("../fonts/DMSans-BoldItalic.ttf");
+}
+
+@font-face {
+    -fx-font-family: "DM Sans Bold";
+    src: url("../fonts/DMSans-Bold.ttf");
+}
+
+@font-face {
+    -fx-font-family: "DM Sans Extra Bold";
+    src: url("../fonts/DMSans-ExtraBold.ttf");
+}
+
+@font-face {
+    -fx-font-family: "DM Sans Light";
+    src: url("../fonts/DMSans-Light.ttf");
+}
+
+@font-face {
+    -fx-font-family: "DM Sans Medium";
+    src: url("../fonts/DMSans-Medium.ttf");
+}
+
+@font-face {
+    -fx-font-family: "DM Sans Regular";
+    src: url("../fonts/DMSans-Regular.ttf");
+}
+
+@font-face {
+    -fx-font-family: "DM Sans SemiBold";
+    src: url("../fonts/DMSans-SemiBold.ttf");
+}
+
+@font-face {
+    -fx-font-family: "DM Sans 24pt Bold";
+    src: url("../fonts/DMSans_24pt-Bold.ttf");
+}
+
+@font-face {
+    -fx-font-family: "DM Sans ExtraLight";
+    src: url("../fonts/DMSans-ExtraLight.ttf");
+}
+
+@font-face {
+    -fx-font-family: "Helvetica Neue Bold";
+    src: url("../fonts/HelveticaNeueBold.otf");
+}
+
+@font-face {
+    -fx-font-family: "Helvetica Neue Light";
+    src: url("../fonts/HelveticaNeueLight.otf");
+}
+
+@font-face {
+    -fx-font-family: "Helvetica Neue Medium";
+    src: url("../fonts/HelveticaNeueMedium.otf");
+}
+
+@font-face {
+    -fx-font-family: "Helvetica Neue Roman";
+    src: url("../fonts/HelveticaNeueRoman.otf");
+}
+
+
+

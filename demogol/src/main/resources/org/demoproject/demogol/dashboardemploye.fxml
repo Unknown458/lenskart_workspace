@@ -1,0 +1,1691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.gleidson28.GNAvatarView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.demoproject.demogol.empdashcontrolar">
+   <left>
+      <VBox fx:id="sidebody" prefHeight="760.0" prefWidth="241.0">
+         <children>
+            <Pane fx:id="body" prefHeight="765.0" prefWidth="1145.0">
+               <children>
+                  <Pane fx:id="search" layoutX="19.0" layoutY="14.0" prefHeight="29.0" prefWidth="206.0" style="-fx-background-radius: 4px;">
+                     <children>
+                        <FontAwesomeIconView fill="#9a9595" glyphName="SEARCH" layoutX="8.0" layoutY="19.0" size="14" />
+                        <MFXTextField fx:id="inputsearch" floatMode="DISABLED" layoutX="29.0" layoutY="1.0" prefHeight="27.0" prefWidth="177.0" promptText="Search...">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </MFXTextField>
+                        <Pane fx:id="cancelbtn" layoutX="165.0" layoutY="7.0" maxHeight="17.0" prefHeight="16.0" prefWidth="32.0">
+                           <children>
+                              <Text fx:id="cancelbtn1" fill="#727171" layoutX="9.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XK">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Button fx:id="dashboard11" alignment="BOTTOM_LEFT" layoutX="19.0" layoutY="143.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="206.0">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="3.5" offsetX="1.0" offsetY="1.0" radius="0.875" spread="1.0" width="2.0">
+                           <color>
+                              <Color red="0.8299999833106995" green="0.8299999833106995" blue="0.8299999833106995" opacity="0.6404579877853394" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <graphic>
+                        <TextFlow prefHeight="23.0" prefWidth="137.0">
+                           <children>
+                              <FontAwesomeIconView fx:id="calicon" fill="#9a9595" glyphName="CALENDAR" size="14" />
+                              <Text fx:id="dashtext11" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="    Calendar" wrappingWidth="59.98046875" />
+                           </children>
+                           <padding>
+                              <Insets left="1.0" top="2.0" />
+                           </padding>
+                        </TextFlow>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="dashboard111" alignment="BOTTOM_LEFT" layoutX="18.0" layoutY="178.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="206.0">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="3.5" offsetX="1.0" offsetY="1.0" radius="0.875" spread="1.0" width="2.0">
+                           <color>
+                              <Color red="0.8299999833106995" green="0.8299999833106995" blue="0.8299999833106995" opacity="0.6404579877853394" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <graphic>
+                        <TextFlow prefHeight="23.0" prefWidth="137.0">
+                           <children>
+                              <FontAwesomeIconView fx:id="npticon" fill="#9a9595" glyphName="BELL" size="14" />
+                              <Text fx:id="dashtext111" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="    Notifications" wrappingWidth="59.98046875" />
+                           </children>
+                           <padding>
+                              <Insets left="1.0" top="2.0" />
+                           </padding>
+                        </TextFlow>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="dashboard1111" alignment="BOTTOM_LEFT" layoutX="19.0" layoutY="212.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="206.0">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="3.5" offsetX="1.0" offsetY="1.0" radius="0.875" spread="1.0" width="2.0">
+                           <color>
+                              <Color red="0.8299999833106995" green="0.8299999833106995" blue="0.8299999833106995" opacity="0.6404579877853394" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <graphic>
+                        <TextFlow prefHeight="23.0" prefWidth="137.0">
+                           <children>
+                              <FontAwesomeIconView fx:id="comicon" fill="#9a9595" glyphName="BRIEFCASE" size="14" />
+                              <Text fx:id="dashtext1111" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="    Company" wrappingWidth="59.98046875" />
+                           </children>
+                           <padding>
+                              <Insets left="1.0" top="2.0" />
+                           </padding>
+                        </TextFlow>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Line endX="100.0" layoutX="121.0" layoutY="267.0" startX="-100.0" stroke="#c9c9c9b5" />
+                  <TextFlow layoutX="19.0" layoutY="283.0" prefHeight="26.0" prefWidth="94.0">
+                     <children>
+                        <Text fx:id="far" fill="#303030" strokeType="OUTSIDE" strokeWidth="0.0" text="Favourites">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <FontAwesomeIconView fill="#aaa9a9" glyphName="PLUS" layoutX="212.0" layoutY="299.0" selectionFill="#b2afaf">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+                  <TextFlow layoutX="22.0" layoutY="312.0" prefHeight="24.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8c2f5" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="13.0" />
+                        <Text fx:id="tenko" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="     Tenko" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="48.78515625" />
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="2.0" />
+                     </padding>
+                  </TextFlow>
+                  <TextFlow layoutX="22.0" layoutY="341.0" prefHeight="24.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#baa7e8" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="13.0" />
+                        <Text fx:id="Crowded" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="     Crowded" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="48.78515625" />
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="2.0" />
+                     </padding>
+                  </TextFlow>
+                  <TextFlow layoutX="22.0" layoutY="370.0" prefHeight="24.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeb2a9" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="13.0" />
+                        <Text fx:id="crypter" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="     Crypter" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="48.78515625" />
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="2.0" />
+                     </padding>
+                  </TextFlow>
+                  <TextFlow layoutX="22.0" layoutY="401.0" prefHeight="24.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ef2cb" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="13.0" />
+                        <Text fx:id="dribble" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="     Dribble Meetup" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="48.78515625" />
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="2.0" />
+                     </padding>
+                  </TextFlow>
+                  <TextFlow layoutX="26.0" layoutY="576.0" prefHeight="20.0" prefWidth="200.0" />
+                  <TextFlow layoutX="30.0" layoutY="621.0" prefHeight="25.0" prefWidth="182.0">
+                     <children>
+                        <FontAwesomeIconView fill="#323232" glyphName="COMMENTS" size="16" />
+                        <Text fx:id="supportt" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="   Support">
+                           <font>
+                              <Font name="Open Sans Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="31.0" layoutY="646.0" prefHeight="25.0" prefWidth="191.0">
+                     <children>
+                        <FontAwesomeIconView fill="#323232" glyphName="INFO_CIRCLE" size="16" />
+                        <Text fx:id="report" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="   Report">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <MFXButton fx:id="dashboard" layoutX="19.0" layoutY="71.0" onAction="#dash" prefHeight="31.0" prefWidth="206.0" text=" ">
+                     <graphic>
+                        <Pane prefHeight="24.0" prefWidth="201.0">
+                           <children>
+                              <FontAwesomeIconView fx:id="docicon" fill="#974dff" glyphName="DASHBOARD" layoutX="-1.0" layoutY="16.0" size="14" />
+                              <Text fx:id="dashtext" fill="#323232" layoutX="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    Dashboard" wrappingWidth="72.98046875" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+                  <MFXButton fx:id="dashboard1" layoutX="18.0" layoutY="106.0" onAction="#emp" prefHeight="31.0" prefWidth="206.0" text=" ">
+                     <graphic>
+                        <TextFlow prefHeight="23.0" prefWidth="188.0">
+                           <children>
+                              <FontAwesomeIconView fx:id="empicon" fill="#9a9595" glyphName="USERS" size="14" text="" />
+                              <Text fx:id="dashtext1" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="    Customers" wrappingWidth="59.98046875" />
+                           </children>
+                           <padding>
+                              <Insets left="1.0" top="2.0" />
+                           </padding>
+                        </TextFlow>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox fx:id="titlebar" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="364.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Lenskart-logo (1) (2).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="833.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/secure.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="15.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <FlowPane prefHeight="40.0" prefWidth="776.0">
+                     <children>
+                        <Pane fx:id="navadd" prefWidth="521.0" style="-fx-background-radius: 12px;">
+                           <children>
+                              <TextFlow prefHeight="26.0" prefWidth="490.0" style="-fx-background-radius: 12px;" textAlignment="CENTER">
+                                 <children>
+                                    <FontAwesomeIconView glyphName="LOCK" wrappingWidth="27.714279174804688" />
+                                    <Text fx:id="navowner" strokeType="OUTSIDE" strokeWidth="0.0" text="   Employee Dashboard" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="106.07615661621094" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="3.0" />
+                                 </padding>
+                              </TextFlow>
+                              <ImageView fitHeight="15.0" fitWidth="39.0" layoutX="496.0" layoutY="5.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8-reload-67.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets top="8.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="4.0" />
+                     </HBox.margin>
+                  </FlowPane>
+               </children>
+            </HBox>
+            <Button fx:id="min" mnemonicParsing="false" onAction="#minbtn" prefHeight="47.0" prefWidth="45.0">
+               <graphic>
+                  <ImageView fitHeight="13.0" fitWidth="13.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@image/icons8-minimize-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="maximize" mnemonicParsing="false" onAction="#maxbtn" prefHeight="42.0" prefWidth="45.0">
+               <graphic>
+                  <ImageView fitHeight="14.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/icons8-restore-down-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="close" mnemonicParsing="false" onAction="#closebtn" prefHeight="45.0" prefWidth="47.0">
+               <graphic>
+                  <FontAwesomeIconView fx:id="cancel" fill="#252525" glyphName="CLOSE" selectionFill="#a13c3c" size="25" stroke="WHITE" strokeWidth="4.0" wrappingWidth="20.428571701049805">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane fx:id="centerpane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="viewallproducts" layoutY="255.0" prefHeight="530.0" prefWidth="1060.0" style="-fx-background-color: #e5e7ed; -fx-background-radius: 12px;">
+               <children>
+                  <Pane layoutX="-102.0" prefHeight="501.0" prefWidth="1024.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_RIGHT" layoutX="339.0" layoutY="150.28570556640625" size="16" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_RIGHT" layoutX="800.0" layoutY="149.28570556640625" size="16" />
+                        <MFXButton fx:id="logoutbtn1" alignment="CENTER" buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="487.0" layoutY="374.0" onAction="#backtomain" prefHeight="52.0" prefWidth="164.0" rippleColor="#ffbdbd" style="-fx-background-radius: 12px;" text=" " textAlignment="CENTER">
+                           <textFill>
+                              <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Glow level="0.02" />
+                           </effect>
+                           <graphic>
+                              <Pane prefHeight="47.0" prefWidth="155.0">
+                                 <children>
+                                    <TextFlow layoutX="21.0" layoutY="4.0" prefHeight="40.0" prefWidth="36.0" textAlignment="CENTER">
+                                       <children>
+                                          <FontAwesomeIconView fx:id="icon1" glyphName="SIGN_OUT" size="28" textOrigin="BOTTOM" wrappingWidth="26.0" />
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </TextFlow>
+                                    <TextFlow layoutX="52.0" layoutY="12.0" prefHeight="27.0" prefWidth="87.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <children>
+                                          <Text fx:id="emptext111" fill="#323232" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="     Back" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="57.763671875" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" />
+                                       </padding>
+                                    </TextFlow>
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </MFXButton>
+                        <MFXScrollPane hbarPolicy="NEVER" layoutX="100.0" layoutY="59.0" pannable="true" prefHeight="264.0" prefWidth="916.0" style="-fx-background-color: none;" vbarPolicy="NEVER" viewOrder="10.0">
+                           <padding>
+                              <Insets left="12.0" />
+                           </padding>
+                           <content>
+                              <Pane prefHeight="257.0" prefWidth="1120.0">
+                                 <children>
+                                    <MFXButton fx:id="mfxframeview" buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="119.0" layoutY="6.0" onAction="#viewframetable" prefHeight="252.0" prefWidth="200.0" rippleColor="#bbcdff" style="-fx-background-radius: 12px; -fx-background-color: #fff;" text=" ">
+                                       <textFill>
+                                          <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <graphic>
+                                          <Pane prefHeight="252.0" prefWidth="192.0">
+                                             <children>
+                                                <ImageView fitHeight="134.0" fitWidth="159.0" layoutX="17.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@image/—Pngtree—flat style technology business blue_14099095.png" />
+                                                   </image>
+                                                   <effect>
+                                                      <ColorAdjust contrast="0.33" hue="0.06" saturation="0.02" />
+                                                   </effect>
+                                                </ImageView>
+                                                <TextFlow layoutY="133.0" prefHeight="34.0" prefWidth="192.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="emptext21" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="View Frame Products" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow layoutX="11.0" layoutY="161.0" prefHeight="73.0" prefWidth="171.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="smtextc21" fill="#4d4d4d" strokeType="OUTSIDE" strokeWidth="0.0" text="Browse existing customer details effortlessly." wrappingWidth="221.208984375">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </Pane>
+                                       </graphic>
+                                    </MFXButton>
+                                    <MFXButton fx:id="mfxlenseproduft" buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="360.0" layoutY="6.0" onAction="#viewlensetable" prefHeight="252.0" prefWidth="200.0" rippleColor="#bbcdff" style="-fx-background-radius: 12px; -fx-background-color: #fff;" text=" ">
+                                       <textFill>
+                                          <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <graphic>
+                                          <Pane prefHeight="252.0" prefWidth="192.0">
+                                             <children>
+                                                <ImageView fitHeight="141.0" fitWidth="167.0" layoutX="10.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@image/month-planning-to-do-list-time-management-woman-is-sitting-with-laptop-and-working-with-data-removebg-preview.png" />
+                                                   </image>
+                                                   <effect>
+                                                      <ColorAdjust contrast="0.33" hue="0.06" saturation="0.02" />
+                                                   </effect>
+                                                </ImageView>
+                                                <TextFlow layoutY="133.0" prefHeight="34.0" prefWidth="195.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="emptext31" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="View Lenses Product" textAlignment="CENTER" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow layoutX="11.0" layoutY="160.0" prefHeight="73.0" prefWidth="171.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="smtextc31" fill="#4d4d4d" strokeType="OUTSIDE" strokeWidth="0.0" text="Expand your inventory by adding new products seamlessly." wrappingWidth="221.208984375">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </Pane>
+                                       </graphic>
+                                    </MFXButton>
+                                    <MFXButton fx:id="mfxgoodles" buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="605.0" layoutY="6.0" onAction="#goggesviewbtn" prefHeight="252.0" prefWidth="200.0" rippleColor="#bbcdff" style="-fx-background-radius: 12px; -fx-background-color: #fff;" text=" ">
+                                       <textFill>
+                                          <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <graphic>
+                                          <Pane prefHeight="252.0" prefWidth="192.0">
+                                             <children>
+                                                <ImageView fitHeight="141.0" fitWidth="167.0" layoutX="10.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@image/Table_Work_Clipart_Hd_PNG__Teamwork_Concept_People_Working_In_Table_Meeting_And_The_Co_Working_Office_Flat_Vector_Illustration__Business__Team__Work_PNG_Image_For_Free_Download-removebg-preview.png" />
+                                                   </image>
+                                                   <effect>
+                                                      <ColorAdjust contrast="0.33" hue="0.06" saturation="0.02" />
+                                                   </effect>
+                                                </ImageView>
+                                                <TextFlow layoutY="133.0" prefHeight="34.0" prefWidth="195.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="emptext41" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="View Goggles Product" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow layoutX="11.0" layoutY="160.0" prefHeight="73.0" prefWidth="171.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="smtextc41" fill="#4d4d4d" strokeType="OUTSIDE" strokeWidth="0.0" text="Explore your product catalog with ease." wrappingWidth="221.208984375">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </Pane>
+                                       </graphic>
+                                    </MFXButton>
+                                 </children>
+                              </Pane>
+                           </content>
+                        </MFXScrollPane>
+                        <TextFlow layoutX="115.0" layoutY="36.0" prefHeight="43.0" prefWidth="223.0">
+                           <children>
+                              <Text fx:id="scrolltitle1" strokeType="OUTSIDE" strokeWidth="0.0" text="View Products">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="viewprotable" layoutY="14.0" prefHeight="755.0" prefWidth="1060.0" style="-fx-background-color: #e5e7ed; -fx-background-radius: 12px;">
+               <children>
+                  <TableView fx:id="framemaintable" layoutX="3.0" layoutY="4.0" prefHeight="704.0" prefWidth="1045.0">
+                     <columns>
+                        <TableColumn fx:id="idframe" editable="false" minWidth="7.0" prefWidth="67.33334350585938" text=" " />
+                        <TableColumn fx:id="fnametable" editable="false" prefWidth="172.66665649414062" text="Frame Name" />
+                        <TableColumn fx:id="fnotable" editable="false" minWidth="0.0" prefWidth="75.0" text="Frame No." />
+                        <TableColumn fx:id="fcolortable" editable="false" prefWidth="70.0" text="Color" />
+                        <TableColumn fx:id="fshapetable" editable="false" prefWidth="87.0" text="Shape" />
+                        <TableColumn fx:id="fquantitytable" editable="false" prefWidth="61.0" text="Quantity" />
+                        <TableColumn fx:id="fbrandtable" editable="false" minWidth="7.0" prefWidth="99.0" text="Brand" />
+                        <TableColumn fx:id="ftypetable" editable="false" minWidth="7.0" prefWidth="91.0" text="Type" />
+                        <TableColumn fx:id="fdatetable" editable="false" minWidth="7.0" prefWidth="108.0" text="Date" />
+                        <TableColumn fx:id="fpricetable" editable="false" minWidth="7.0" prefWidth="100.0" text="price" />
+                        <TableColumn fx:id="fbutoontable" editable="false" minWidth="7.0" prefWidth="130.0" text=" " />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane fx:id="viewgoglestable" layoutY="14.0" prefHeight="755.0" prefWidth="1060.0" style="-fx-background-color: #e5e7ed; -fx-background-radius: 12px;">
+               <children>
+                  <TableView fx:id="gmaintable" layoutX="3.0" layoutY="4.0" prefHeight="704.0" prefWidth="1045.0">
+                     <columns>
+                        <TableColumn fx:id="Gidtable" editable="false" minWidth="7.0" prefWidth="88.0" text="  " />
+                        <TableColumn fx:id="gnametable" editable="false" prefWidth="130.0" text="Goggles Name" />
+                        <TableColumn fx:id="gnotable" editable="false" minWidth="0.0" prefWidth="75.0" text="Goggles No." />
+                        <TableColumn fx:id="gcolortable" editable="false" prefWidth="70.0" text="Color" />
+                        <TableColumn fx:id="gtypetable" editable="false" prefWidth="87.0" text="Type" />
+                        <TableColumn fx:id="gquantitytable" editable="false" prefWidth="61.0" text="Quantity" />
+                        <TableColumn fx:id="gbrandtable" editable="false" minWidth="7.0" prefWidth="99.0" text="Brand" />
+                        <TableColumn fx:id="gpricetable" editable="false" minWidth="7.0" prefWidth="100.0" text="price" />
+                        <TableColumn fx:id="Gdatetable" editable="false" minWidth="7.0" prefWidth="108.0" text="Date" />
+                        <TableColumn fx:id="Gbutoontable" editable="false" minWidth="7.0" prefWidth="130.0" text=" " />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane fx:id="propanemain" layoutY="14.0" style="-fx-background-color: #e5e7ed; -fx-background-radius: 12px;">
+               <children>
+                  <Pane fx:id="lensepro" layoutX="9.0" layoutY="84.0" prefHeight="674.0" prefWidth="1036.0" style="-fx-background-color: #fff; -fx-background-radius: 12px;">
+                     <children>
+                        <Pane layoutX="28.0" layoutY="8.0" prefHeight="34.0" prefWidth="390.0" style="-fx-background-color: #dee5e9; -fx-background-radius: 8px;">
+                           <children>
+                              <MFXButton fx:id="appbtnemp" layoutX="2.0" layoutY="2.0" onAction="#frame" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Add Frame" />
+                              <MFXButton fx:id="appbtnemp2update" layoutX="134.0" layoutY="2.0" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Add Lense" />
+                              <MFXButton fx:id="appbtnemp21m" layoutX="266.0" layoutY="2.0" onAction="#addgoggles" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Add Goggles" />
+                           </children>
+                        </Pane>
+                        <Line endX="935.0" layoutX="101.0" layoutY="53.0" startX="-100.0" stroke="#c7c7c7a1" />
+                        <TextFlow layoutX="60.0" layoutY="66.0" prefHeight="43.0" prefWidth="262.0">
+                           <children>
+                              <Text fx:id="tit" strokeType="OUTSIDE" strokeWidth="0.0" text="Constomize product form">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <MFXButton fx:id="nextbtnemp" buttonType="RAISED" depthLevel="LEVEL1" layoutX="939.0" layoutY="63.0" onAction="#addgoggles" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #9a3bff;" text="Next" textFill="WHITE" />
+                        <MFXButton fx:id="canbtnemp" depthLevel="LEVEL1" layoutX="853.0" layoutY="64.0" prefHeight="31.0" prefWidth="76.0" text="Cancel" />
+                        <MFXButton fx:id="previewemp" depthLevel="LEVEL1" layoutX="781.0" layoutY="64.0" onAction="#lenssubmit" prefHeight="31.0" prefWidth="73.0" text="Submit" />
+                        <Line endX="935.0" layoutX="101.0" layoutY="105.0" startX="-100.0" stroke="#c7c7c7a1" />
+                        <Pane layoutX="1.0" layoutY="107.0" prefHeight="490.0" prefWidth="1035.0">
+                           <children>
+                              <MFXDatePicker fx:id="lensdate" layoutX="496.0" layoutY="130.0" prefHeight="31.0" prefWidth="321.0" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="117.0" layoutY="33.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="lense" strokeType="OUTSIDE" strokeWidth="0.0" text="Lense Material" />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="lensmate" floatMode="DISABLED" layoutX="117.0" layoutY="54.0" prefHeight="31.0" prefWidth="321.0" promptText="Lense material" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="496.0" layoutY="33.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="lensecolor" strokeType="OUTSIDE" strokeWidth="0.0" text="Lense Color" />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="lenscolor" floatMode="DISABLED" layoutX="496.0" layoutY="54.0" prefHeight="31.0" prefWidth="321.0" promptText="Lense  color" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="117.0" layoutY="112.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="lenseno" strokeType="OUTSIDE" strokeWidth="0.0" text="Lense No." />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="lensnum" floatMode="DISABLED" layoutX="117.0" layoutY="133.0" prefHeight="31.0" prefWidth="321.0" promptText="Lense  no" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="496.0" layoutY="112.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="date" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="117.0" layoutY="196.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="lenseno3" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="lensprice" floatMode="DISABLED" layoutX="117.0" layoutY="217.0" prefHeight="31.0" prefWidth="321.0" promptText="Price" style="-fx-background-color: #f3f5f8;" />
+                           </children>
+                        </Pane>
+                     </children>
+                     <effect>
+                        <DropShadow offsetY="1.0">
+                           <color>
+                              <Color opacity="0.12977099418640137" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane fx:id="Goggles" layoutX="9.0" layoutY="84.0" prefHeight="674.0" prefWidth="1036.0" style="-fx-background-color: #fff; -fx-background-radius: 12px;">
+                     <children>
+                        <Pane layoutX="28.0" layoutY="8.0" prefHeight="34.0" prefWidth="390.0" style="-fx-background-color: #dee5e9; -fx-background-radius: 8px;">
+                           <children>
+                              <MFXButton fx:id="appbtnemp21update" layoutX="2.0" layoutY="2.0" onAction="#frame" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Add Frame" />
+                              <MFXButton fx:id="appbtnemp211update" layoutX="134.0" layoutY="2.0" onAction="#addlense" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Add Lense" />
+                              <MFXButton fx:id="appbtnemp2111" layoutX="266.0" layoutY="2.0" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Add Goggles" />
+                           </children>
+                        </Pane>
+                        <Line endX="935.0" layoutX="101.0" layoutY="53.0" startX="-100.0" stroke="#c7c7c7a1" />
+                        <TextFlow layoutX="60.0" layoutY="66.0" prefHeight="43.0" prefWidth="262.0">
+                           <children>
+                              <Text fx:id="tit21" strokeType="OUTSIDE" strokeWidth="0.0" text="Constomize product form">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <MFXButton fx:id="nextbtnemp21" buttonType="RAISED" depthLevel="LEVEL1" layoutX="939.0" layoutY="63.0" onAction="#gosubmit" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #9a3bff;" text="Submit" textFill="WHITE" />
+                        <MFXButton fx:id="canbtnemp21" depthLevel="LEVEL1" layoutX="853.0" layoutY="64.0" prefHeight="31.0" prefWidth="76.0" text="Cancel" />
+                        <MFXButton fx:id="previewemp21" depthLevel="LEVEL1" layoutX="781.0" layoutY="64.0" prefHeight="31.0" prefWidth="73.0" text="Preview" />
+                        <Line endX="935.0" layoutX="101.0" layoutY="105.0" startX="-100.0" stroke="#c7c7c7a1" />
+                        <Pane layoutX="1.0" layoutY="107.0" prefHeight="490.0" prefWidth="1035.0">
+                           <children>
+                              <MFXTextField fx:id="foname" floatMode="DISABLED" layoutX="64.0" layoutY="42.0" onAction="#goglename" prefHeight="31.0" prefWidth="259.0" promptText="Frame name" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="66.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="fnameemp21" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles Name" />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="gogno" floatMode="DISABLED" layoutX="374.0" layoutY="42.0" onAction="#gogoolno" prefHeight="31.0" prefWidth="259.0" promptText="Frame no" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="376.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="fno21" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles No." />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="gogcolor" floatMode="DISABLED" layoutX="684.0" layoutY="42.0" onAction="#gogalcol" prefHeight="31.0" prefWidth="259.0" promptText="Frame Color" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="686.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="fcolor21" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles Color" />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="gqun" floatMode="DISABLED" layoutX="375.0" layoutY="124.0" onAction="#gogqun" prefHeight="31.0" prefWidth="259.0" promptText="Quantity" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="377.0" layoutY="105.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="quntty21" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="gobrand" floatMode="DISABLED" layoutX="685.0" layoutY="124.0" onAction="#gogbrand" prefHeight="31.0" prefWidth="259.0" promptText="Brand name" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="687.0" layoutY="105.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="brand21" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand" />
+                                 </children>
+                              </TextFlow>
+                              <MFXDatePicker fx:id="godate" layoutX="374.0" layoutY="205.0" onAction="#gogdate" prefHeight="31.0" prefWidth="259.0" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="380.0" layoutY="186.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="date21" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="gqun1" floatMode="DISABLED" layoutX="64.0" layoutY="205.0" onAction="#gogprice" prefHeight="31.0" prefWidth="259.0" promptText="Price" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="66.0" layoutY="186.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="quntty211" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+                                 </children>
+                              </TextFlow>
+                           </children>
+                        </Pane>
+                        <MFXTextField fx:id="gogtypt" floatMode="DISABLED" layoutX="65.0" layoutY="233.0" onAction="#gogptype" prefHeight="31.0" prefWidth="259.0" promptText="eg.prescription glasses, sunglasses, reading glasses" style="-fx-background-color: #f3f5f8;" />
+                        <TextFlow layoutX="67.0" layoutY="214.0" prefHeight="21.0" prefWidth="106.0">
+                           <children>
+                              <Text fx:id="type21" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+                           </children>
+                        </TextFlow>
+                     </children>
+                     <effect>
+                        <DropShadow offsetY="1.0">
+                           <color>
+                              <Color opacity="0.12977099418640137" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane fx:id="MAINFORM" layoutX="3.0" prefHeight="749.0" prefWidth="1045.0" style="-fx-background-color: #f3f5f8; -fx-background-radius: 12px;">
+                     <children>
+                        <TextFlow layoutX="46.0" layoutY="16.0" prefHeight="27.0" prefWidth="216.0">
+                           <children>
+                              <Text fx:id="emptitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Products  " wrappingWidth="22.13671875">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <FontAwesomeIconView fill="#abaaaabf" glyphName="ELLIPSIS_H" size="16" />
+                           </children>
+                        </TextFlow>
+                        <TextFlow layoutX="46.0" layoutY="45.0" prefHeight="21.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="partsm" fill="#838282" strokeType="OUTSIDE" strokeWidth="0.0" text="Part time  ." />
+                              <Text fx:id="fullsm" fill="#838282" strokeType="OUTSIDE" strokeWidth="0.0" text="  Full time" />
+                           </children>
+                        </TextFlow>
+                        <Circle fill="WHITE" layoutX="24.0" layoutY="30.0" radius="12.0" stroke="#c6c6c663" strokeType="INSIDE" />
+                        <FontAwesomeIconView glyphName="ANGLE_LEFT" layoutX="20.0" layoutY="36.0" size="16" />
+                        <Pane fx:id="framepro1" layoutX="6.0" layoutY="84.0" prefHeight="674.0" prefWidth="1036.0" style="-fx-background-color: #fff; -fx-background-radius: 12px;">
+                           <children>
+                              <Line endX="935.0" layoutX="101.0" layoutY="53.0" startX="-100.0" stroke="#c7c7c7a1" />
+                              <TextFlow layoutX="60.0" layoutY="66.0" prefHeight="43.0" prefWidth="262.0">
+                                 <children>
+                                    <Text fx:id="tit2" strokeType="OUTSIDE" strokeWidth="0.0" text="Constomize product form">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                              <MFXButton fx:id="nextbtnemp212" buttonType="RAISED" depthLevel="LEVEL1" layoutX="939.0" layoutY="63.0" onAction="#addlense" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #9a3bff;" text="Next" textFill="WHITE" />
+                              <MFXButton fx:id="canbtnemp2" depthLevel="LEVEL1" layoutX="853.0" layoutY="64.0" prefHeight="31.0" prefWidth="76.0" text="Cancel" />
+                              <MFXButton fx:id="previewemp2" depthLevel="LEVEL1" layoutX="781.0" layoutY="64.0" onAction="#submitpro" prefHeight="31.0" prefWidth="73.0" text="Submit" />
+                              <Line endX="935.0" layoutX="101.0" layoutY="105.0" startX="-100.0" stroke="#c7c7c7a1" />
+                              <Pane layoutX="1.0" layoutY="107.0" prefHeight="490.0" prefWidth="1035.0">
+                                 <children>
+                                    <MFXTextField fx:id="proname" floatMode="DISABLED" layoutX="64.0" layoutY="42.0" onAction="#prodname" prefHeight="31.0" prefWidth="259.0" promptText="Frame name" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="66.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fnameemp2" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Name" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="no" floatMode="DISABLED" layoutX="374.0" layoutY="42.0" onAction="#frameno" prefHeight="31.0" prefWidth="259.0" promptText="Frame no" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="376.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fno2" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame No." />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="color" floatMode="DISABLED" layoutX="684.0" layoutY="42.0" onAction="#framecolor" prefHeight="31.0" prefWidth="259.0" promptText="Frame Color" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="686.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fcolor2" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Color" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="shape" floatMode="DISABLED" layoutX="64.0" layoutY="124.0" onAction="#frameshape" prefHeight="31.0" prefWidth="259.0" promptText="Frame shape" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="66.0" layoutY="105.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fshape2" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Shape" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="qun" floatMode="DISABLED" layoutX="375.0" layoutY="124.0" onAction="#quantity" prefHeight="31.0" prefWidth="259.0" promptText="Quantity" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="377.0" layoutY="105.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="quntty2" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="brand" floatMode="DISABLED" layoutX="685.0" layoutY="124.0" onAction="#brandname" prefHeight="31.0" prefWidth="259.0" promptText="Brand name" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="687.0" layoutY="105.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="brand2" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXDatePicker fx:id="pro1date" layoutX="374.0" layoutY="205.0" onAction="#datepro" prefHeight="31.0" prefWidth="259.0" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="380.0" layoutY="186.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="date2" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="gqun11" floatMode="DISABLED" layoutX="685.0" layoutY="205.0" onAction="#proprice" prefHeight="31.0" prefWidth="259.0" promptText="Price" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="687.0" layoutY="186.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="quntty2111" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                              </Pane>
+                              <MFXTextField fx:id="type" floatMode="DISABLED" layoutX="65.0" layoutY="313.0" onAction="#typepro" prefHeight="31.0" prefWidth="259.0" promptText="eg.prescription glasses, sunglasses, reading glasses" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="67.0" layoutY="294.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="type2" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+                                 </children>
+                              </TextFlow>
+                              <Pane layoutX="28.0" layoutY="8.0" prefHeight="34.0" prefWidth="390.0" style="-fx-background-color: #dee5e9; -fx-background-radius: 8px;">
+                                 <children>
+                                    <MFXButton fx:id="appbtnemp2" layoutX="2.0" layoutY="2.0" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Add Frame" />
+                                    <MFXButton fx:id="appbtnemp21" layoutX="134.0" layoutY="2.0" onAction="#addlense" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Add Lense" />
+                                    <MFXButton fx:id="appbtnemp211" layoutX="266.0" layoutY="2.0" onAction="#addgoggles" prefHeight="30.0" prefWidth="122.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Add Goggles" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <effect>
+                              <DropShadow offsetY="1.0">
+                                 <color>
+                                    <Color opacity="0.12977099418640137" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="viewcustable" layoutY="14.0" prefHeight="755.0" prefWidth="1060.0" style="-fx-background-color: #e5e7ed; -fx-background-radius: 12px;">
+               <children>
+                  <TableView fx:id="maintable" layoutX="3.0" layoutY="4.0" prefHeight="704.0" prefWidth="1046.0">
+                     <columns>
+                        <TableColumn fx:id="idtable" editable="false" prefWidth="83.0" text="ID" />
+                        <TableColumn fx:id="nametable" editable="false" prefWidth="171.0" text="Full Name" />
+                        <TableColumn fx:id="emailtable" editable="false" minWidth="0.0" prefWidth="156.0" text="E-mail" />
+                        <TableColumn fx:id="locationtablecus" editable="false" prefWidth="118.0" text="Location" />
+                        <TableColumn fx:id="usernametable" editable="false" prefWidth="116.0" text="Date" />
+                        <TableColumn fx:id="passwordtable" editable="false" minWidth="7.0" prefWidth="105.0" text="Discount" />
+                        <TableColumn fx:id="viewColumn" editable="false" prefWidth="128.0" text=" " />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane fx:id="addcustomer" layoutY="15.0" prefHeight="746.0" prefWidth="1060.0" style="-fx-background-color: #fff; -fx-background-radius: 12px;">
+               <children>
+                  <Pane fx:id="MAINFORM1" layoutY="-1.0" prefHeight="749.0" prefWidth="1045.0" style="-fx-background-color: #f3f5f8; -fx-background-radius: 12px;">
+                     <children>
+                        <TextFlow layoutX="46.0" layoutY="16.0" prefHeight="27.0" prefWidth="216.0">
+                           <children>
+                              <Text fx:id="emptitle1" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Customers  " wrappingWidth="22.13671875">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <FontAwesomeIconView fill="#abaaaabf" glyphName="ELLIPSIS_H" size="16" />
+                           </children>
+                        </TextFlow>
+                        <TextFlow layoutX="46.0" layoutY="45.0" prefHeight="21.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="partsm1" fill="#838282" strokeType="OUTSIDE" strokeWidth="0.0" text="New ." />
+                              <Text fx:id="fullsm1" fill="#838282" strokeType="OUTSIDE" strokeWidth="0.0" text=" Old" />
+                           </children>
+                        </TextFlow>
+                        <Circle fill="WHITE" layoutX="24.0" layoutY="30.0" radius="12.0" stroke="#c6c6c663" strokeType="INSIDE" />
+                        <FontAwesomeIconView glyphName="ANGLE_LEFT" layoutX="20.0" layoutY="36.0" size="16" />
+                        <Pane fx:id="customerp2" layoutX="6.0" layoutY="75.0" prefHeight="674.0" prefWidth="1036.0" style="-fx-background-color: #fff; -fx-background-radius: 12px;">
+                           <children>
+                              <Pane layoutX="28.0" layoutY="8.0" prefHeight="34.0" prefWidth="272.0" style="-fx-background-color: #dee5e9; -fx-background-radius: 8px;">
+                                 <children>
+                                    <MFXButton fx:id="appbtnemp11update" layoutX="2.0" layoutY="2.0" onAction="#custmer1get" prefHeight="30.0" prefWidth="132.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Add Customers Info" />
+                                    <MFXButton fx:id="appbtnemp111" layoutX="138.0" layoutY="2.0" prefHeight="30.0" prefWidth="132.0" style="-fx-background-radius: 8px;" text="Add Customers Info" />
+                                 </children>
+                              </Pane>
+                              <Line endX="935.0" layoutX="101.0" layoutY="53.0" startX="-100.0" stroke="#c7c7c7a1" />
+                              <TextFlow layoutX="60.0" layoutY="66.0" prefHeight="43.0" prefWidth="262.0">
+                                 <children>
+                                    <Text fx:id="tit11" strokeType="OUTSIDE" strokeWidth="0.0" text="Constomize Customers form">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                              <MFXButton fx:id="nextbtnemp11" buttonType="RAISED" depthLevel="LEVEL1" layoutX="939.0" layoutY="63.0" onAction="#submitcusnew" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #9a3bff;" text="Submit" textFill="WHITE" />
+                              <MFXButton fx:id="canbtnemp11" depthLevel="LEVEL1" layoutX="853.0" layoutY="64.0" onAction="#cancelcus" prefHeight="31.0" prefWidth="76.0" text="Cancel" />
+                              <MFXButton fx:id="previewemp11" depthLevel="LEVEL1" layoutX="781.0" layoutY="64.0" prefHeight="31.0" prefWidth="73.0" text="Preview" />
+                              <Line endX="935.0" layoutX="101.0" layoutY="105.0" startX="-100.0" stroke="#c7c7c7a1" />
+                              <Pane layoutX="1.0" layoutY="107.0" prefHeight="490.0" prefWidth="1035.0">
+                                 <children>
+                                    <TextFlow layoutX="66.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fnameemp11" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles Name" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="ggcolor" editable="false" floatMode="DISABLED" layoutX="374.0" layoutY="42.0" prefHeight="31.0" prefWidth="259.0" promptText="Color" selectable="false" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="376.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fno11" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles Color" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="ggtype" editable="false" floatMode="DISABLED" layoutX="684.0" layoutY="42.0" prefHeight="31.0" prefWidth="259.0" promptText="Type" selectable="false" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="686.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fcolor11" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles Type" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="ggbrand" editable="false" floatMode="DISABLED" layoutX="64.0" layoutY="124.0" prefHeight="31.0" prefWidth="259.0" promptText="Brand" selectable="false" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="66.0" layoutY="105.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fshape11" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles Brand" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXComboBox fx:id="ggname" floatMode="DISABLED" layoutX="64.0" layoutY="42.0" prefHeight="15.0" prefWidth="259.0" promptText="Goggles name" style="-fx-background-color: #f3f5f8;" />
+                                    <MFXTextField fx:id="ggdiscount" floatMode="DISABLED" layoutX="684.0" layoutY="120.0" prefHeight="31.0" prefWidth="259.0" promptText="Discount" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="686.0" layoutY="101.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fshape111" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="ggprice" floatMode="DISABLED" layoutX="374.0" layoutY="120.0" prefHeight="31.0" prefWidth="259.0" promptText="Goggles price" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="376.0" layoutY="101.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fshape1111" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles Price" />
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <effect>
+                              <DropShadow offsetY="1.0">
+                                 <color>
+                                    <Color opacity="0.12977099418640137" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Pane>
+                        <Pane fx:id="cuspart1" layoutX="6.0" layoutY="75.0" prefHeight="674.0" prefWidth="1036.0" style="-fx-background-color: #fff; -fx-background-radius: 12px;">
+                           <children>
+                              <Pane layoutX="28.0" layoutY="8.0" prefHeight="34.0" prefWidth="272.0" style="-fx-background-color: #dee5e9; -fx-background-radius: 8px;">
+                                 <children>
+                                    <MFXButton fx:id="appbtnemp1" layoutX="2.0" layoutY="2.0" prefHeight="30.0" prefWidth="132.0" style="-fx-background-radius: 8px;" text="Add Customers Info" />
+                                    <MFXButton fx:id="appbtnemp11" layoutX="138.0" layoutY="2.0" onAction="#cusget2" prefHeight="30.0" prefWidth="132.0" style="-fx-background-radius: 8px; -fx-background-color: #dee5e9;" text="Add Customers Info" />
+                                 </children>
+                              </Pane>
+                              <Line endX="935.0" layoutX="101.0" layoutY="53.0" startX="-100.0" stroke="#c7c7c7a1" />
+                              <TextFlow layoutX="60.0" layoutY="66.0" prefHeight="43.0" prefWidth="262.0">
+                                 <children>
+                                    <Text fx:id="tit1" strokeType="OUTSIDE" strokeWidth="0.0" text="Constomize Customers form">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                              <MFXButton fx:id="nextbtnemp1" buttonType="RAISED" depthLevel="LEVEL1" layoutX="939.0" layoutY="63.0" onAction="#cusget2" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #9a3bff;" text="Next" textFill="WHITE" />
+                              <MFXButton fx:id="canbtnemp1" depthLevel="LEVEL1" layoutX="853.0" layoutY="64.0" onAction="#cancelcus" prefHeight="31.0" prefWidth="76.0" text="Cancel" />
+                              <MFXButton fx:id="previewemp1" depthLevel="LEVEL1" layoutX="781.0" layoutY="64.0" prefHeight="31.0" prefWidth="73.0" text="Preview" />
+                              <Line endX="935.0" layoutX="101.0" layoutY="105.0" startX="-100.0" stroke="#c7c7c7a1" />
+                              <Pane fx:id="lvlenseno" layoutX="1.0" layoutY="107.0" prefHeight="490.0" prefWidth="1035.0">
+                                 <children>
+                                    <MFXTextField fx:id="namef" floatMode="DISABLED" layoutX="64.0" layoutY="42.0" prefHeight="31.0" prefWidth="259.0" promptText="Customer name" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="66.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fnameemp1" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="cusmail" floatMode="DISABLED" layoutX="374.0" layoutY="42.0" prefHeight="31.0" prefWidth="259.0" promptText="Customer Email" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="376.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fno1" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="cusno" floatMode="DISABLED" layoutX="684.0" layoutY="42.0" prefHeight="31.0" prefWidth="259.0" promptText="Phone no" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="686.0" layoutY="23.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fcolor1" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No." />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="cusadd" floatMode="DISABLED" layoutX="64.0" layoutY="124.0" prefHeight="31.0" prefWidth="259.0" promptText="Address" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="66.0" layoutY="105.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="fshape1" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="fvtype" editable="false" floatMode="DISABLED" layoutX="375.0" layoutY="289.0" prefHeight="31.0" prefWidth="259.0" promptText="Type" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="377.0" layoutY="270.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="quntty1" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Type" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow layoutX="687.0" layoutY="105.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="brand1" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame No" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXDatePicker fx:id="cusdate" layoutX="375.0" layoutY="121.0" prefHeight="31.0" prefWidth="259.0" promptText="Current date" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="377.0" layoutY="101.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="date1" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXComboBox fx:id="cusbrand" floatMode="DISABLED" layoutX="685.0" layoutY="124.0" prefHeight="15.0" prefWidth="259.0" promptText="Frame no" style="-fx-background-color: #f3f5f8;" />
+                                    <MFXTextField fx:id="cusdiscount" floatMode="DISABLED" layoutX="684.0" layoutY="379.0" prefHeight="31.0" prefWidth="259.0" promptText="Lense no" style="-fx-background-color: #f3f5f8;" />
+                                    <MFXTextField fx:id="fvbrand" editable="false" floatMode="DISABLED" layoutX="64.0" layoutY="289.0" prefHeight="31.0" prefWidth="259.0" promptText="Brand" style="-fx-background-color: #f3f5f8;" />
+                                    <MFXTextField fx:id="lvcolor" floatMode="DISABLED" layoutX="375.0" layoutY="379.0" prefHeight="31.0" prefWidth="259.0" promptText="Color" style="-fx-background-color: #f3f5f8;" />
+                                    <MFXComboBox fx:id="lvlensename" floatMode="DISABLED" layoutX="64.0" layoutY="379.0" prefHeight="15.0" prefWidth="259.0" promptText="Lense name" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="69.0" layoutY="358.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="framenoemp" strokeType="OUTSIDE" strokeWidth="0.0" text="Lense Name" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="fvprice" editable="false" floatMode="DISABLED" layoutX="685.0" layoutY="285.0" prefHeight="31.0" prefWidth="259.0" promptText="Frame price" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="687.0" layoutY="266.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="quntty11" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Price" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXTextField fx:id="lvprice" editable="false" floatMode="DISABLED" layoutX="64.0" layoutY="456.0" prefHeight="31.0" prefWidth="259.0" promptText="Lense price" style="-fx-background-color: #f3f5f8;" />
+                                    <TextFlow layoutX="69.0" layoutY="437.0" prefHeight="21.0" prefWidth="106.0">
+                                       <children>
+                                          <Text fx:id="type11" strokeType="OUTSIDE" strokeWidth="0.0" text="Lense Price" />
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                              </Pane>
+                              <TextFlow layoutX="67.0" layoutY="294.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="lense1" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Name" />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="fvname" editable="false" floatMode="DISABLED" layoutX="65.0" layoutY="313.0" prefHeight="31.0" prefWidth="259.0" promptText="Frame name" style="-fx-background-color: #f3f5f8;" />
+                              <TextFlow layoutX="379.0" layoutY="294.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="lensecolor1" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Color" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="688.0" layoutY="294.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="lenseno1" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Shape" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="67.0" layoutY="377.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="type1" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Brand" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="377.0" layoutY="467.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="framename" strokeType="OUTSIDE" strokeWidth="0.0" text="Lense Color" />
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="686.0" layoutY="467.0" prefHeight="21.0" prefWidth="106.0">
+                                 <children>
+                                    <Text fx:id="totall" strokeType="OUTSIDE" strokeWidth="0.0" text="Lense No." />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="fvcolor" editable="false" floatMode="DISABLED" layoutX="377.0" layoutY="313.0" prefHeight="31.0" prefWidth="259.0" promptText="Color" style="-fx-background-color: #f3f5f8;" />
+                              <MFXTextField fx:id="fvshape" editable="false" floatMode="DISABLED" layoutX="686.0" layoutY="313.0" prefHeight="31.0" prefWidth="259.0" promptText="Shape" style="-fx-background-color: #f3f5f8;" />
+                           </children>
+                           <effect>
+                              <DropShadow offsetY="1.0">
+                                 <color>
+                                    <Color opacity="0.12977099418640137" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="viewlensetable" layoutY="14.0" prefHeight="755.0" prefWidth="1060.0" style="-fx-background-color: #e5e7ed; -fx-background-radius: 12px;">
+               <children>
+                  <TableView fx:id="lensemaintable" layoutX="3.0" layoutY="4.0" prefHeight="704.0" prefWidth="1045.0">
+                     <columns>
+                        <TableColumn fx:id="idlense" editable="false" minWidth="7.0" prefWidth="77.33331298828125" text=" " />
+                        <TableColumn fx:id="lnametable" editable="false" prefWidth="132.66668701171875" text="Lense Name" />
+                        <TableColumn fx:id="lcolortable" editable="false" prefWidth="70.0" text="Color" />
+                        <TableColumn fx:id="lnotable" editable="false" prefWidth="87.0" text="Lense No." />
+                        <TableColumn fx:id="ldatetable" editable="false" minWidth="7.0" prefWidth="108.0" text="Date" />
+                        <TableColumn fx:id="lpricetable" editable="false" minWidth="7.0" prefWidth="100.0" text="price" />
+                        <TableColumn fx:id="lbutoontable" editable="false" minWidth="7.0" prefWidth="130.0" text=" " />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane fx:id="recipt" layoutY="14.0" prefHeight="746.0" prefWidth="1060.0" style="-fx-background-color: #fff; -fx-background-radius: 12px;">
+               <children>
+                  <Pane fx:id="MAINFORM2" layoutY="-1.0" prefHeight="749.0" prefWidth="1045.0" style="-fx-background-color: #f3f5f8; -fx-background-radius: 12px;" />
+                  <Pane fx:id="framepro11" layoutX="1.0" prefHeight="762.0" prefWidth="1060.0" style="-fx-background-color: #fff; -fx-background-radius: 12px;">
+                     <children>
+                        <Line endX="456.0" layoutX="101.0" layoutY="53.0" startX="-100.0" stroke="#c7c7c7a1" />
+                        <TextFlow layoutX="46.0" layoutY="66.0" prefHeight="43.0" prefWidth="262.0">
+                           <children>
+                              <Text fx:id="recipttit" strokeType="OUTSIDE" strokeWidth="0.0" text="Make Customer Recipt Easily">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <Pane layoutX="11.0" layoutY="164.0" prefHeight="414.0" prefWidth="548.0">
+                           <children>
+                              <MFXButton fx:id="printbtn" buttonType="RAISED" depthLevel="LEVEL1" layoutX="113.0" layoutY="203.0" onAction="#rrprint" prefHeight="32.0" prefWidth="260.0" style="-fx-background-color: #9a3bff; -fx-background-radius: 50px;" text="Print" textFill="WHITE" />
+                              <TextFlow layoutX="102.0" layoutY="252.0" prefHeight="48.0" prefWidth="288.0" textAlignment="CENTER">
+                                 <children>
+                                    <Text fx:id="notice" strokeType="OUTSIDE" strokeWidth="0.0" text="Note: this recipt is only for preview Purpose only." />
+                                 </children>
+                              </TextFlow>
+                              <MFXTextField fx:id="rridnew" floatMode="DISABLED" layoutX="28.0" layoutY="127.0" onAction="#rrid" prefHeight="35.0" prefWidth="455.0" promptText="Enter Customer ID" style="-fx-background-color: #f3f5f8;" />
+                              <MFXButton fx:id="searchid" layoutX="426.0" layoutY="132.0" onAction="#rrsearch" text="Search">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </MFXButton>
+                              <GNAvatarView layoutX="220.0" layoutY="14.0" prefHeight="52.0" prefWidth="59.0" strokeWidth="1.0" type="CIRCLE">
+                                 <image>
+                                    <Image url="@image/1000_F_109843958_DfHIWsEMetooGiTdSFjOmvVMJ9Vh4o38-removebg-preview.png" />
+                                 </image>
+                                 <stroke>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.8684210777282715" green="0.39802631735801697" blue="0.39802631735801697" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.28963414634146334">
+                                             <color>
+                                                <Color red="0.1555190086364746" green="0.6821820139884949" blue="0.9078947305679321" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.49085365853658536">
+                                             <color>
+                                                <Color red="0.16910000145435333" green="0.21716000139713287" blue="0.8899999856948853" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.49390243902439024">
+                                             <color>
+                                                <Color red="0.16910000145435333" green="0.21716000139713287" blue="0.8899999856948853" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.4969512195121951">
+                                             <color>
+                                                <Color red="0.16910000145435333" green="0.21716000139713287" blue="0.8899999856948853" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.33581870794296265" green="0.9473684430122375" blue="0.1666666716337204" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </stroke></GNAvatarView>
+                              <TextFlow layoutX="149.0" layoutY="73.0" prefHeight="27.0" prefWidth="200.0" textAlignment="CENTER">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Printing Digital">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </TextFlow>
+                           </children>
+                        </Pane>
+                        <TextFlow layoutX="45.0" layoutY="11.0" prefHeight="27.0" prefWidth="216.0">
+                           <children>
+                              <Text fx:id="recipttitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Recipt Dashboard" wrappingWidth="212.13671875">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <Circle fill="WHITE" layoutX="23.0" layoutY="25.0" radius="12.0" stroke="#c6c6c663" strokeType="INSIDE" />
+                        <FontAwesomeIconView glyphName="ANGLE_LEFT" layoutX="20.0" layoutY="31.0" size="16" />
+                        <Pane fx:id="reciptmain" layoutX="568.0" prefHeight="761.0" prefWidth="495.0">
+                           <children>
+                              <ImageView fitHeight="80.0" fitWidth="166.0" layoutX="15.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/New Project (10).png" />
+                                 </image>
+                              </ImageView>
+                              <TextFlow layoutX="313.0" layoutY="20.0" prefHeight="117.0" prefWidth="167.0">
+                                 <children>
+                                    <TextFlow prefHeight="27.0" prefWidth="170.0">
+                                       <children>
+                                          <Text fx:id="holdername" strokeType="OUTSIDE" strokeWidth="0.0" text="Lenskart" wrappingWidth="44.115234375">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font></Text>
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow prefHeight="15.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="hadd1" fill="#5e5d5d" strokeType="OUTSIDE" strokeWidth="0.0" text="F-8, Above TBZ" wrappingWidth="80.162109375" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow prefHeight="15.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="hadd2" fill="#5e5d5d" strokeType="OUTSIDE" strokeWidth="0.0" text="Sankari Hari, Krishna complex" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow prefHeight="15.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="hadd3" fill="#5e5d5d" strokeType="OUTSIDE" strokeWidth="0.0" text="Binaki, Nagpur 440018" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow prefHeight="15.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="hadd4" fill="#5e5d5d" strokeType="OUTSIDE" strokeWidth="0.0" text="India" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow prefHeight="15.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="hadd5" fill="#5e5d5d" strokeType="OUTSIDE" strokeWidth="0.0" text="+91-08147851002" />
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="28.0" layoutY="172.0" prefHeight="93.0" prefWidth="143.0">
+                                 <children>
+                                    <Text fx:id="cus1" fill="#282828" strokeType="OUTSIDE" strokeWidth="0.0" text="To,">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font></Text>
+                                    <TextFlow prefHeight="18.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="cusname" strokeType="OUTSIDE" strokeWidth="0.0" text="User name">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></Text>
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow prefHeight="18.0" prefWidth="144.0">
+                                       <children>
+                                          <Text fx:id="cusadd5" fill="#4a4848" strokeType="OUTSIDE" strokeWidth="0.0" text="Binkai manglwati" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow prefHeight="18.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="cusstate" fill="#4a4848" strokeType="OUTSIDE" strokeWidth="0.0" text="Nagpur" />
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="268.0" layoutY="172.0" prefHeight="105.0" prefWidth="197.0">
+                                 <children>
+                                    <TextFlow>
+                                       <children>
+                                          <Text fx:id="recno" fill="#565657" strokeType="OUTSIDE" strokeWidth="0.0" text="Recipt No.                          " />
+                                          <Text fx:id="recnom" strokeType="OUTSIDE" strokeWidth="0.0" text="NVI-101" />
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text fx:id="curdate" fill="#565657" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Date " />
+                                          <TextFlow prefHeight="16.0" prefWidth="114.0" textAlignment="RIGHT">
+                                             <children>
+                                                <Text fx:id="curnom" strokeType="OUTSIDE" strokeWidth="0.0" text="12-nov-20024" />
+                                             </children>
+                                          </TextFlow>
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text fx:id="termres" fill="#565657" strokeType="OUTSIDE" strokeWidth="0.0" text="Terms             " />
+                                          <TextFlow prefHeight="16.0" prefWidth="109.0" textAlignment="RIGHT">
+                                             <children>
+                                                <Text fx:id="termnom" strokeType="OUTSIDE" strokeWidth="0.0" text="Due on Reciept" />
+                                             </children>
+                                          </TextFlow>
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow>
+                                       <children>
+                                          <Text fx:id="dudate" fill="#565657" strokeType="OUTSIDE" strokeWidth="0.0" text="Due Date " />
+                                          <TextFlow prefHeight="16.0" prefWidth="131.0" textAlignment="RIGHT">
+                                             <children>
+                                                <Text fx:id="duenom" strokeType="OUTSIDE" strokeWidth="0.0" text="12-nov-2024" />
+                                             </children>
+                                          </TextFlow>
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                              </TextFlow>
+                              <Line endX="373.0" layoutX="111.0" layoutY="147.0" startX="-103.0" stroke="#c7c7c7a1" strokeWidth="0.4" />
+                              <Line endX="373.0" layoutX="112.0" layoutY="445.0" startX="-103.0" stroke="#c7c7c7a1" strokeWidth="0.4" />
+                              <TableView fx:id="reciptmaintable" layoutX="28.0" layoutY="271.0" prefHeight="252.0" prefWidth="442.0">
+                                <columns>
+                                  <TableColumn fx:id="reciptitem" prefWidth="122.0" text="Item" />
+                                  <TableColumn fx:id="reciptquantity" prefWidth="75.0" text="Quantity" />
+                                    <TableColumn fx:id="reciptprice" prefWidth="73.0" text="Price" />
+                                    <TableColumn fx:id="reciptdiscunt" text="Discount" />
+                                    <TableColumn fx:id="reciptamount" prefWidth="91.0" text="Amount" />
+                                </columns>
+                              </TableView>
+                              <Line endX="373.0" layoutX="113.0" layoutY="528.0" startX="-103.0" stroke="#c7c7c7" strokeWidth="0.4" />
+                              <TextFlow layoutX="328.0" layoutY="539.0">
+                                 <children>
+                                    <Label fx:id="total" text="Total">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                 </children>
+                              </TextFlow>
+                              <TextFlow layoutX="400.0" layoutY="539.0">
+                                 <children>
+                                    <Label fx:id="totalamo" text="00.00">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                 </children>
+                              </TextFlow>
+                              <Line endX="373.0" layoutX="116.0" layoutY="566.0" startX="-103.0" stroke="#c7c7c7" strokeWidth="0.4" />
+                           </children>
+                        </Pane>
+                        <Line endX="456.0" layoutX="101.0" layoutY="108.0" startX="-100.0" stroke="#c7c7c7a1" />
+                     </children>
+                     <effect>
+                        <DropShadow offsetY="1.0">
+                           <color>
+                              <Color opacity="0.12977099418640137" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="firstpage" layoutY="14.0" prefHeight="755.0" prefWidth="1208.0" style="-fx-background-color: #e5e7ed; -fx-background-radius: 12px;">
+               <children>
+                  <Pane layoutX="-102.0" layoutY="240.0" prefHeight="501.0" prefWidth="1024.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_RIGHT" layoutX="339.0" layoutY="150.28570556640625" size="16" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_RIGHT" layoutX="800.0" layoutY="149.28570556640625" size="16" />
+                        <MFXButton fx:id="logoutbtn" alignment="CENTER" buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="476.0" layoutY="353.0" onAction="#logoutnew" prefHeight="52.0" prefWidth="164.0" rippleColor="#ffbdbd" style="-fx-background-radius: 12px;" text=" " textAlignment="CENTER">
+                           <textFill>
+                              <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Glow level="0.02" />
+                           </effect>
+                           <graphic>
+                              <Pane prefHeight="47.0" prefWidth="155.0">
+                                 <children>
+                                    <TextFlow layoutX="21.0" layoutY="4.0" prefHeight="40.0" prefWidth="36.0" textAlignment="CENTER">
+                                       <children>
+                                          <FontAwesomeIconView fx:id="icon" glyphName="SIGN_OUT" size="28" textOrigin="BOTTOM" wrappingWidth="26.0" />
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </TextFlow>
+                                    <TextFlow layoutX="52.0" layoutY="12.0" prefHeight="27.0" prefWidth="87.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <children>
+                                          <Text fx:id="emptext11" fill="#323232" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="  Log Out" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="57.763671875" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" />
+                                       </padding>
+                                    </TextFlow>
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </MFXButton>
+                        <MFXScrollPane hbarPolicy="NEVER" layoutX="100.0" layoutY="59.0" pannable="true" prefHeight="264.0" prefWidth="916.0" style="-fx-background-color: none;" vbarPolicy="NEVER" viewOrder="10.0">
+                           <padding>
+                              <Insets left="12.0" />
+                           </padding>
+                           <content>
+                              <Pane prefHeight="257.0" prefWidth="1120.0">
+                                 <children>
+                                    <MFXButton fx:id="mfxaddcustomer" buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="2.0" layoutY="6.0" onAction="#addcus" prefHeight="252.0" prefWidth="200.0" rippleColor="#bbcdff" style="-fx-background-radius: 12px; -fx-background-color: #fff;" text=" ">
+                                       <textFill>
+                                          <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <graphic>
+                                          <Pane prefHeight="252.0" prefWidth="192.0">
+                                             <children>
+                                                <ImageView fitHeight="133.0" fitWidth="161.0" layoutX="13.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@image/pngtree-contact-our-male-customer-service-image_2243670-removebg-preview.png" />
+                                                   </image>
+                                                   <effect>
+                                                      <ColorAdjust contrast="0.33" hue="0.06" saturation="0.02" />
+                                                   </effect>
+                                                </ImageView>
+                                                <TextFlow layoutX="-1.0" layoutY="133.0" prefHeight="34.0" prefWidth="194.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="emptext" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Customers" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow layoutX="1.0" layoutY="158.0" prefHeight="73.0" prefWidth="191.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="smtextc" fill="#4d4d4d" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new customers to your database" wrappingWidth="146.8984375">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </Pane>
+                                       </graphic>
+                                    </MFXButton>
+                                    <MFXButton fx:id="mfxviewcustomer" buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="226.0" layoutY="6.0" onAction="#viewcus" prefHeight="252.0" prefWidth="200.0" rippleColor="#bbcdff" style="-fx-background-radius: 12px; -fx-background-color: #fff;" text=" ">
+                                       <textFill>
+                                          <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <graphic>
+                                          <Pane prefHeight="252.0" prefWidth="192.0">
+                                             <children>
+                                                <ImageView fitHeight="134.0" fitWidth="159.0" layoutX="17.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@image/—Pngtree—flat style technology business blue_14099095.png" />
+                                                   </image>
+                                                   <effect>
+                                                      <ColorAdjust contrast="0.33" hue="0.06" saturation="0.02" />
+                                                   </effect>
+                                                </ImageView>
+                                                <TextFlow layoutX="2.0" layoutY="133.0" prefHeight="34.0" prefWidth="189.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="emptext2" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="View Customers" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow layoutX="11.0" layoutY="159.0" prefHeight="73.0" prefWidth="171.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="smtextc2" fill="#4d4d4d" strokeType="OUTSIDE" strokeWidth="0.0" text="Browse existing customer details effortlessly." wrappingWidth="221.208984375">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </Pane>
+                                       </graphic>
+                                    </MFXButton>
+                                    <MFXButton fx:id="addproductbtn" buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="450.0" layoutY="6.0" onAction="#addpro" prefHeight="252.0" prefWidth="200.0" rippleColor="#bbcdff" style="-fx-background-radius: 12px; -fx-background-color: #fff;" text=" ">
+                                       <textFill>
+                                          <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <graphic>
+                                          <Pane prefHeight="252.0" prefWidth="192.0">
+                                             <children>
+                                                <ImageView fitHeight="141.0" fitWidth="167.0" layoutX="10.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@image/month-planning-to-do-list-time-management-woman-is-sitting-with-laptop-and-working-with-data-removebg-preview.png" />
+                                                   </image>
+                                                   <effect>
+                                                      <ColorAdjust contrast="0.33" hue="0.06" saturation="0.02" />
+                                                   </effect>
+                                                </ImageView>
+                                                <TextFlow layoutX="1.0" layoutY="133.0" prefHeight="34.0" prefWidth="192.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="emptext3" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Products" textAlignment="CENTER" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow layoutX="11.0" layoutY="158.0" prefHeight="73.0" prefWidth="171.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="smtextc3" fill="#4d4d4d" strokeType="OUTSIDE" strokeWidth="0.0" text="Expand your inventory by adding new products seamlessly." wrappingWidth="221.208984375">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </Pane>
+                                       </graphic>
+                                    </MFXButton>
+                                    <MFXButton fx:id="viewproduct" buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="675.0" layoutY="6.0" onAction="#viewpro" prefHeight="252.0" prefWidth="200.0" rippleColor="#bbcdff" style="-fx-background-radius: 12px; -fx-background-color: #fff;" text=" ">
+                                       <textFill>
+                                          <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <graphic>
+                                          <Pane prefHeight="252.0" prefWidth="192.0">
+                                             <children>
+                                                <ImageView fitHeight="141.0" fitWidth="167.0" layoutX="10.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@image/Table_Work_Clipart_Hd_PNG__Teamwork_Concept_People_Working_In_Table_Meeting_And_The_Co_Working_Office_Flat_Vector_Illustration__Business__Team__Work_PNG_Image_For_Free_Download-removebg-preview.png" />
+                                                   </image>
+                                                   <effect>
+                                                      <ColorAdjust contrast="0.33" hue="0.06" saturation="0.02" />
+                                                   </effect>
+                                                </ImageView>
+                                                <TextFlow layoutX="1.0" layoutY="133.0" prefHeight="34.0" prefWidth="191.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="emptext4" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="View Products" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow layoutX="11.0" layoutY="158.0" prefHeight="73.0" prefWidth="171.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="smtextc4" fill="#4d4d4d" strokeType="OUTSIDE" strokeWidth="0.0" text="Explore your product catalog with ease." wrappingWidth="221.208984375">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </Pane>
+                                       </graphic>
+                                    </MFXButton>
+                                    <MFXButton fx:id="mfxreci" buttonType="RAISED" cache="true" depthLevel="LEVEL1" layoutX="902.0" layoutY="6.0" onAction="#reciptbtn" prefHeight="252.0" prefWidth="200.0" rippleColor="#bbcdff" style="-fx-background-radius: 12px; -fx-background-color: #fff;" text=" ">
+                                       <textFill>
+                                          <LinearGradient endX="0.8293838862559242" endY="0.5023696682464455">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.7105262875556946" green="0.6973684430122375" blue="0.6973684430122375" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <graphic>
+                                          <Pane prefHeight="252.0" prefWidth="192.0">
+                                             <children>
+                                                <ImageView fitHeight="133.0" fitWidth="204.0" layoutX="-6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@image/Free_vector_illustration_-_Electronic_receipt_concept_with_people_scene_in_flat_cartoon_design__Woman_receives_online_payment_-removebg-preview.png" />
+                                                   </image>
+                                                   <effect>
+                                                      <ColorAdjust contrast="0.33" hue="0.06" saturation="0.02" />
+                                                   </effect>
+                                                </ImageView>
+                                                <TextFlow layoutX="71.0" layoutY="133.0" prefHeight="34.0" prefWidth="136.0">
+                                                   <children>
+                                                      <Text fx:id="emptext5" fill="#323232" strokeType="OUTSIDE" strokeWidth="0.0" text="Recipt" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow layoutX="11.0" layoutY="158.0" prefHeight="73.0" prefWidth="171.0" textAlignment="CENTER">
+                                                   <children>
+                                                      <Text fx:id="smtextc5" fill="#4d4d4d" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate receipts for transactions and keep track of sales." wrappingWidth="221.208984375">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </Pane>
+                                       </graphic>
+                                    </MFXButton>
+                                 </children>
+                              </Pane>
+                           </content>
+                        </MFXScrollPane>
+                        <TextFlow layoutX="957.0" layoutY="42.0" prefHeight="23.0" prefWidth="105.0">
+                           <children>
+                              <Text fx:id="showmore" strokeType="OUTSIDE" strokeWidth="0.0" text="Show more " />
+                              <FontAwesomeIconView glyphName="ANGLE_RIGHT" />
+                           </children>
+                        </TextFlow>
+                        <TextFlow layoutX="115.0" layoutY="36.0" prefHeight="43.0" prefWidth="223.0">
+                           <children>
+                              <Text fx:id="scrolltitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Employees workspace">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                     </children>
+                  </Pane>
+                  <FontAwesomeIconView glyphName="QUESTION_CIRCLE" layoutX="1002.0" layoutY="638.0" size="28" wrappingWidth="15.285714149475098" />
+                  <Pane fx:id="mscontain" layoutX="10.0" layoutY="4.0" prefHeight="227.0" prefWidth="912.0" style="-fx-background-radius: 12px; -fx-border-radius: 12px;">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="9.27" offsetY="1.0" radius="7.0675">
+                           <color>
+                              <Color opacity="0.06488549709320068" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <ImageView fx:id="img" fitHeight="219.0" fitWidth="899.0" layoutX="6.0" layoutY="5.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@image/banner.jpeg" />
+                           </image>
+                           <effect>
+                              <GaussianBlur radius="2.0" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </center>
+   </BorderPane>

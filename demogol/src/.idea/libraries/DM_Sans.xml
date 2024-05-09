@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="DM_Sans">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/main/resources/org/demoproject/demogol/fonts/DM_Sans.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

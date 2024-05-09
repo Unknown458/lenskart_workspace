@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.demoproject.demogol.cutomerupdatecontrolar">
+   <children>
+      <Pane fx:id="mainviewcontain" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e5e7ed;">
+         <children>
+            <MFXTextField fx:id="cuname" floatMode="DISABLED" layoutX="64.0" layoutY="180.0" prefHeight="29.0" prefWidth="215.0" promptText="Full name" style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="69.0" layoutY="161.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="fname" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" />
+               </children>
+            </TextFlow>
+            <MFXTextField fx:id="cuemail" floatMode="DISABLED" layoutX="297.0" layoutY="182.0" prefHeight="29.0" prefWidth="215.0" promptText="Email" style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="300.0" layoutY="161.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="ename" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="69.0" layoutY="219.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="pname" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="300.0" layoutY="219.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="cname" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame No" />
+               </children>
+            </TextFlow>
+            <MFXTextField fx:id="cufshape" floatMode="DISABLED" layoutX="64.0" layoutY="308.0" prefHeight="29.0" prefWidth="215.0" promptText="Frame shape" style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="68.0" layoutY="287.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="zname" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Shape" />
+               </children>
+            </TextFlow>
+            <MFXButton fx:id="nextbtn" buttonType="RAISED" depthLevel="LEVEL1" layoutX="878.0" layoutY="62.0" onAction="#handuleupdate" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #9a3bff;" text="Update" textFill="WHITE" />
+            <TextFlow layoutX="49.0" layoutY="8.0" prefHeight="10.0" prefWidth="347.0">
+               <children>
+                  <Text fx:id="heading" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Customer Data">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+            <Line endX="853.0" layoutX="172.0" layoutY="50.0" startX="-127.0" stroke="#c7c7c7ad" />
+            <MFXButton fx:id="canbtn" depthLevel="LEVEL1" layoutX="795.0" layoutY="61.0" onAction="#closebtn" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #e5e7ed;" text="Cancel" />
+            <Line endX="853.0" layoutX="173.0" layoutY="104.0" startX="-127.0" stroke="#c7c7c7ad" />
+            <Pane layoutX="533.0" layoutY="136.0" prefHeight="272.0" prefWidth="468.0">
+               <children>
+                  <TextFlow layoutX="14.0" layoutY="25.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="degree" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No." />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="243.0" layoutY="25.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="depart" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="14.0" layoutY="82.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="gender" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Name" />
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="244.0" layoutY="83.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="dob" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Color" />
+                     </children>
+                  </TextFlow>
+                  <MFXTextField fx:id="cuphone" floatMode="DISABLED" layoutX="10.0" layoutY="45.0" prefHeight="29.0" prefWidth="215.0" promptText="Phone No." style="-fx-background-color: #f3f5f8;" />
+                  <MFXTextField fx:id="cuadd" floatMode="DISABLED" layoutX="240.0" layoutY="44.0" prefHeight="29.0" prefWidth="215.0" promptText="Address" style="-fx-background-color: #f3f5f8;" />
+                  <MFXTextField fx:id="cufname" floatMode="DISABLED" layoutX="10.0" layoutY="101.0" prefHeight="29.0" prefWidth="215.0" promptText="Frame Name" style="-fx-background-color: #f3f5f8;" />
+                  <MFXTextField fx:id="cufcolor" floatMode="DISABLED" layoutX="240.0" layoutY="101.0" prefHeight="29.0" prefWidth="215.0" promptText="Frame color" style="-fx-background-color: #f3f5f8;" />
+                  <MFXTextField fx:id="cuftype" floatMode="DISABLED" layoutX="10.0" layoutY="170.0" prefHeight="29.0" prefWidth="215.0" promptText="Frame type" style="-fx-background-color: #f3f5f8;" />
+                  <TextFlow layoutX="17.0" layoutY="149.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="zname11" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Type" />
+                     </children>
+                  </TextFlow>
+                  <MFXTextField fx:id="culname" floatMode="DISABLED" layoutX="240.0" layoutY="170.0" prefHeight="29.0" prefWidth="215.0" promptText="Lense name" style="-fx-background-color: #f3f5f8;" />
+                  <TextFlow layoutX="247.0" layoutY="149.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="zname111" strokeType="OUTSIDE" strokeWidth="0.0" text="Lense Name" />
+                     </children>
+                  </TextFlow>
+                  <MFXTextField fx:id="cugname" floatMode="DISABLED" layoutX="10.0" layoutY="234.0" prefHeight="29.0" prefWidth="215.0" promptText="Goggles name" style="-fx-background-color: #f3f5f8;" />
+                  <TextFlow layoutX="18.0" layoutY="213.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="zname211" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles Name" />
+                     </children>
+                  </TextFlow>
+                  <MFXTextField fx:id="cugcolor" floatMode="DISABLED" layoutX="240.0" layoutY="234.0" prefHeight="29.0" prefWidth="215.0" promptText="Goggles color" style="-fx-background-color: #f3f5f8;" />
+                  <TextFlow layoutX="250.0" layoutY="213.0" prefHeight="21.0" prefWidth="106.0">
+                     <children>
+                        <Text fx:id="zname2111" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles Color" />
+                     </children>
+                  </TextFlow>
+               </children>
+            </Pane>
+            <MFXButton fx:id="cupdate" buttonType="RAISED" layoutX="360.0" layoutY="522.0" onAction="#handuleupdate" prefHeight="36.0" prefWidth="333.0" style="-fx-background-color: #9a3bff; -fx-text-fill: #fff;" text="Update" />
+            <MFXTextField fx:id="cuframeno" floatMode="DISABLED" layoutX="297.0" layoutY="237.0" prefHeight="29.0" prefWidth="215.0" promptText="Frame No." style="-fx-background-color: #f3f5f8;" />
+            <MFXDatePicker fx:id="cudate" layoutX="64.0" layoutY="237.0" prefHeight="29.0" prefWidth="215.0" promptText="Date" style="-fx-background-color: #f3f5f8;" />
+            <MFXTextField fx:id="cufbrand" floatMode="DISABLED" layoutX="297.0" layoutY="307.0" prefHeight="29.0" prefWidth="215.0" promptText="Frame brand" style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="303.0" layoutY="286.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="zname1" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Brand" />
+               </children>
+            </TextFlow>
+            <MFXTextField fx:id="culcolor" floatMode="DISABLED" layoutX="64.0" layoutY="372.0" prefHeight="29.0" prefWidth="215.0" promptText="Lense color" style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="68.0" layoutY="351.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="zname2" strokeType="OUTSIDE" strokeWidth="0.0" text="Lense Color" />
+               </children>
+            </TextFlow>
+            <MFXTextField fx:id="culno" floatMode="DISABLED" layoutX="297.0" layoutY="372.0" prefHeight="29.0" prefWidth="215.0" promptText="Lense no" style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="303.0" layoutY="351.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="zname21" strokeType="OUTSIDE" strokeWidth="0.0" text="Lense No" />
+               </children>
+            </TextFlow>
+            <MFXTextField fx:id="cugtype" floatMode="DISABLED" layoutX="64.0" layoutY="440.0" prefHeight="29.0" prefWidth="215.0" promptText="Goggles type" style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="70.0" layoutY="419.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="zname22" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles Type" />
+               </children>
+            </TextFlow>
+            <MFXTextField fx:id="cugbrand" floatMode="DISABLED" layoutX="297.0" layoutY="440.0" prefHeight="29.0" prefWidth="215.0" promptText="Goggles brand" style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="303.0" layoutY="419.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="zname221" strokeType="OUTSIDE" strokeWidth="0.0" text="Goggles Brand" />
+               </children>
+            </TextFlow>
+            <MFXTextField fx:id="cudiscount" floatMode="DISABLED" layoutX="547.0" layoutY="438.0" prefHeight="29.0" prefWidth="215.0" promptText="Discount" style="-fx-background-color: #f3f5f8;" />
+            <TextFlow layoutX="554.0" layoutY="417.0" prefHeight="21.0" prefWidth="106.0">
+               <children>
+                  <Text fx:id="zname2211" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount" />
+               </children>
+            </TextFlow>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

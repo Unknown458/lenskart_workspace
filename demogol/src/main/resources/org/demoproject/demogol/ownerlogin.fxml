@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane fx:id="containnew" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.demoproject.demogol.ownercontorler">
+   <top>
+      <HBox fx:id="titlebar" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="364.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Lenskart-logo (1) (2).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="833.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <FlowPane prefHeight="40.0" prefWidth="776.0">
+                     <padding>
+                        <Insets top="8.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="4.0" />
+                     </HBox.margin>
+                  </FlowPane>
+               </children>
+            </HBox>
+            <Button fx:id="min" mnemonicParsing="false" onAction="#minbtn" prefHeight="47.0" prefWidth="45.0">
+               <graphic>
+                  <ImageView fitHeight="13.0" fitWidth="13.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@image/icons8-minimize-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="maximize" mnemonicParsing="false" onAction="#maxbtn" prefHeight="42.0" prefWidth="45.0">
+               <graphic>
+                  <ImageView fitHeight="14.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/icons8-restore-down-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="close" mnemonicParsing="false" onAction="#closebtn" prefHeight="45.0" prefWidth="47.0">
+               <graphic>
+                  <FontAwesomeIconView fx:id="cancel" fill="#252525" glyphName="CLOSE" selectionFill="#a13c3c" size="25" stroke="WHITE" strokeWidth="4.0" wrappingWidth="20.428571701049805">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <StackPane style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox minHeight="806.0" minWidth="1302.0">
+               <children>
+                  <StackPane>
+                     <children>
+                        <AnchorPane fx:id="imagemain">
+                           <children>
+                              <ImageView fitHeight="797.0" fitWidth="694.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                                 <image>
+                                    <Image url="@image/DP5KD8RJ_output_0-Photoroom (1).jpeg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="807.0" prefWidth="676.0" style="-fx-background-color: #fff;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="807.0" prefWidth="689.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                              <Pane layoutX="178.0" layoutY="105.0" prefHeight="598.0" prefWidth="374.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <TextFlow layoutX="23.0" prefHeight="40.0" prefWidth="289.0" textAlignment="CENTER">
+                                       <children>
+                                          <Text fx:id="welcome" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome back" textAlignment="CENTER" wrappingWidth="188.90625">
+                                             <font>
+                                                <Font size="28.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow layoutX="83.0" layoutY="47.0" prefHeight="29.0" prefWidth="154.0">
+                                       <children>
+                                          <Text fx:id="hii" strokeType="OUTSIDE" strokeWidth="0.0" text="Glad to see you again" wrappingWidth="132.1328125">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow layoutX="59.0" layoutY="68.0" prefHeight="17.0" prefWidth="204.0" textAlignment="CENTER">
+                                       <children>
+                                          <Text fx:id="loginin" fill="#4a4949" strokeType="OUTSIDE" strokeWidth="0.0" text="Login to your " />
+                                          <Text fx:id="loginin1" strokeType="OUTSIDE" strokeWidth="0.0" text="Owner account" />
+                                          <Text fx:id="loginin2" fill="#4a4949" strokeType="OUTSIDE" strokeWidth="0.0" text=" below" />
+                                       </children>
+                                    </TextFlow>
+                                    <MFXButton fx:id="googlebtn" buttonType="RAISED" depthLevel="LEVEL1" layoutX="31.0" layoutY="106.0" prefHeight="35.0" prefWidth="204.0" text="Continue with Google">
+                                       <graphic>
+                                          <ImageView fitHeight="19.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@image/icons8-google-48.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </MFXButton>
+                                    <ImageView fitHeight="27.0" fitWidth="20.0" layoutX="229.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/icons8-waving-hand-emoji-48.png" />
+                                       </image>
+                                    </ImageView>
+                                    <MFXTextField fx:id="username" floatMode="ABOVE" floatingText="Username" layoutX="15.0" layoutY="209.0" prefHeight="29.0" prefWidth="301.0" promptText="Enter name">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="Username " />
+                                       </tooltip>
+                                    </MFXTextField>
+                                    <MFXPasswordField fx:id="password" allowCopy="true" allowCut="true" allowPaste="true" floatMode="ABOVE" floatingText="Password" hideCharacter="•" layoutX="15.0" layoutY="273.0" prefHeight="17.0" prefWidth="301.0" promptText="Password">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="Password" />
+                                       </tooltip>
+                                    </MFXPasswordField>
+                                    <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="246.0" layoutY="106.0" prefHeight="35.0" prefWidth="46.0" text="  ">
+                                       <cursor>
+                                          <Cursor fx:constant="WAIT" />
+                                       </cursor>
+                                    </MFXButton>
+                                    <ImageView fitHeight="33.0" fitWidth="27.0" layoutX="256.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/icons8-facebook-48.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <TextFlow layoutX="161.0" layoutY="166.0" prefHeight="27.0" prefWidth="35.0">
+                                       <children>
+                                          <Text fx:id="or" strokeType="OUTSIDE" strokeWidth="0.0" text="Or  ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </TextFlow>
+                                    <TextFlow layoutX="222.0" layoutY="319.0" prefHeight="19.0" prefWidth="116.0">
+                                       <children>
+                                          <Text fx:id="forget" strokeType="OUTSIDE" strokeWidth="0.0" text="Forget Password?" wrappingWidth="55.7578125">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Text>
+                                       </children>
+                                    </TextFlow>
+                                    <MFXButton fx:id="loginbtn" buttonType="RAISED" layoutX="19.0" layoutY="404.0" onAction="#logintobtn" prefHeight="40.0" prefWidth="301.0" rippleColor="#b770f5" text="Log In" textAlignment="CENTER" textFill="WHITE">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </MFXButton>
+                                    <TextFlow layoutY="535.0" prefHeight="27.0" prefWidth="338.0" textAlignment="CENTER">
+                                       <children>
+                                          <Text fx:id="regin" fill="#4a4949" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have registration yet?" />
+                                          <Text fx:id="reginew" strokeType="OUTSIDE" strokeWidth="0.0" text="  Register new">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Text>
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                              </Pane>
+                              <MFXButton fx:id="backbtn" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="594.0" layoutY="14.0" onAction="#backto" prefHeight="34.0" prefWidth="65.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px;" text=" ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="18" stroke="#9155f1" textAlignment="CENTER" wrappingWidth="38.2857141494751" />
+                                 </graphic>
+                              </MFXButton>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

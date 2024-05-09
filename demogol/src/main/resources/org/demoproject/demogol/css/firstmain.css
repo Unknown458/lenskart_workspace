@@ -1,0 +1,179 @@
+/* @import url("./font@got.css"); */
+
+
+#fgy{}
+
+
+#titlebar{
+    -fx-background-color: #ffffff;
+}
+#centerpane{
+    -fx-background-color: #e5e7ed;
+}
+#navadd{
+    -fx-background-color: #ffffff;
+}
+#close{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+#close:hover{
+    -fx-background-color: red;
+   
+   
+}
+ #close:hover #cancel{
+-fx-stroke: red;
+
+}
+
+#cancel{
+    -fx-background-color: #fff;
+ 
+}
+
+#maximize{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+
+#maximize:hover{
+    -fx-background-color: #dad7d769;
+}
+#min:hover{
+    -fx-background-color: #dad7d769;
+}
+#min{
+    -fx-border-color: none;
+    -fx-border-width: none;
+    -fx-border-style: none;
+    -fx-background-color: none;
+}
+
+#nav{
+    -fx-background-color: #eeeff3;
+}
+
+#navpro{
+    -fx-background-color: #fff;
+    -fx-background-radius: 20px;
+}
+
+#body{
+    -fx-background-color: #eeeff3;
+}
+
+
+#card{
+    -fx-background-color: #fff;
+    -fx-background-radius:  12px;
+}
+
+#card1{
+    -fx-background-color: #fff;
+    -fx-background-radius:  12px;
+}
+
+#imagewrap{
+    -fx-background-radius: 15px;
+    -fx-background-color: #fff;
+}
+#imagewrap1{
+    -fx-background-radius: 15px;
+    -fx-background-color: #fff;
+}
+
+
+
+#title {     -fx-font-family: "DM Sans SemiBold";
+       -fx-font-size: 26;
+    
+}
+
+#smwordwrap{
+   -fx-background-radius: 25px;
+    -fx-background-color: #fff;
+}
+
+#card:hover{
+    -fx-border-color: #d1d2d3b0; 
+    -fx-border-width: 2px; 
+    -fx-border-style: solid;
+    -fx-border-radius: 12px;
+}
+#card1:hover{
+    -fx-border-color: #d1d2d3b0; 
+    -fx-border-width: 2px; 
+    -fx-border-style: solid;
+    -fx-border-radius: 12px;
+}
+
+#smtitle{
+    -fx-font-family: "DM Sans Medium";
+    -fx-fill: #252525;
+    -fx-font-size: 14;
+}
+
+#label{
+    -fx-fill: white;
+  -fx-font-weight: 700;
+}
+
+#textlabel{
+    -fx-background-color: #3495f0;
+    -fx-border-radius: 12px;
+}
+#cardinnerh{
+    -fx-font-family: "DM Sans Medium";
+    -fx-font-size: 14px;
+
+}
+#cardinnerh1{
+    -fx-font-family: "DM Sans Medium";
+    -fx-font-size: 14px;
+
+}
+#cardinnerhsm{
+    -fx-font-family: "DM Sans Regular";
+    -fx-font-size: 12px;
+
+}
+
+#cardinnerhsm1{
+    -fx-font-family: "DM Sans Regular";
+    -fx-font-size: 12px;
+
+}
+
+#imagecircle{
+  
+   
+    -fx-border-color: rgba(172, 175, 172, 0.486);
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 12px;
+
+}
+
+
+#seprate{
+    -fx-font-family: "DM Sans ExtraLight";
+}
+#infos{
+    -fx-font-family: "DM Sans Medium";
+}
+#indexbox{
+    -fx-background-color: #00ff001c;
+    -fx-background-radius: 12px;
+}
+
+#bgmode{
+     -fx-background-image: url("/image/persaon.jpg");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
