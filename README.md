@@ -1,4 +1,4 @@
-
+![image](https://github.com/Unknown458/lenskart_workspace/assets/149869027/7b458976-119f-45e5-a080-3251bbedb20f)
  # LensKart: A JavaFX Application for Managing Employee and Customer Data
 Overview
 LensKart is a comprehensive management system designed for shop owners and employees to efficiently manage customer and employee data. Built using JavaFX and Maven, this application provides a user-friendly interface for data management and tracking.
@@ -32,6 +32,7 @@ Product Management
 - User-friendly interface for easy data management
 
 Download Application(https://www.mediafire.com/file/0dsnra3b63umcg6/mysetup.exe/file) 
+Download Jar Application(https://www.mediafire.com/file/za22jyxdfqtpoxd/ezyzip.zip/file)
 
 ## Badges
 
